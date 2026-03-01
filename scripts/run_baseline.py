@@ -1,12 +1,15 @@
 import json
 import requests
 import os
+import sys 
 
-MODEL = "gemma:2b"
-OLLAMA_URL = "http://localhost:11434/api/chat"
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(PROJECT_ROOT)
 
-QUESTIONS_PATH = "../data/questions.json"
-RESULTS_DIR = "../results"
+from config import MODEL_NAME, OLLAMA_URL, QUESTIONS_FILE, RESULTS_DIR, BASELINE_OUTPUTS_FILE, DEFAULT_PROMPT_TEMPLATE
+MODEL = MODEL_NAME
+QUESTIONS_PATH = QUESTIONS_FILE
+RESULTS_PATH = BASELINE_OUTPUTS_FILE
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 def ask_llm(prompt):
@@ -38,10 +41,7 @@ def main():
     for item in questions:
         q = item["question"]
 
-        prompt = f"""Answer the following history question concisely.
-
-Question: {q}
-Answer:"""
+        prompt = DEFAULT_PROMPT_TEMPLATE.format(question=q)
 
         answer = ask_llm(prompt)
 
@@ -53,7 +53,8 @@ Answer:"""
 
         print(f"Answered: {q}")
 
-    with open("../results/baseline_outputs.json", "w") as f:
+    os.makedirs(RESULTS_DIR, exist_ok=True)
+    with open(BASELINE_OUTPUTS_FILE, "w") as f:
         json.dump(results, f, indent=2)
 
 if __name__ == "__main__":

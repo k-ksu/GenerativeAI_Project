@@ -58,18 +58,16 @@ ollama pull gemma:2b
 
 ## Prepare data
 
-If you add new pdf documnets you should run from the <u>scripts/</u> directory:
+If you add new pdf documnets you should run:
 
 ```bash
-python prepare_data.py
+python scripts/prepare_data.py
 ```
 
 ## Running the Baseline
 
-From the <u>scripts/</u> directory:
-
 ```bash
-python run_baseline.py
+python scripts/run_baseline.py
 ```
 
 Outputs will be saved to <u>results/baseline_outputs.json</u>
@@ -77,10 +75,8 @@ Outputs will be saved to <u>results/baseline_outputs.json</u>
 
 ## Evaluation
 
-From the <u>scripts/</u> directory:
-
 ```bash
-python evaluate.py
+python scripts/evaluate.py
 ```
 
 Metric: Accuracy = Correct answers / Total questions. This provides a quantitative baseline before introducing retrieval.
