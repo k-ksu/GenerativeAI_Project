@@ -1,8 +1,11 @@
 import os
 from pypdf import PdfReader
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from config import RAW_DATA_DIR, PROCESSED_DATA_DIR
 
-RAW_DIR = "../data/raw"
-PROCESSED_DIR = "../data/processed"
+RAW_DIR = RAW_DATA_DIR
+PROCESSED_DIR = PROCESSED_DATA_DIR
 
 os.makedirs(PROCESSED_DIR, exist_ok=True)
 
