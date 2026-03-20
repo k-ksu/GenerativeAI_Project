@@ -11,13 +11,10 @@ from config import (
     OLLAMA_URL,
     RETRIEVAL_RESULTS_DIR,
     RESULTS_DIR,
+    RAG_RESULTS_DIR,
 )
 
 MODEL = MODEL_NAME
-
-# 👉 новая папка (важно!)
-RAG_RESULTS_DIR = os.path.join(RESULTS_DIR, "rag")
-
 
 def ask_llm(prompt):
     response = requests.post(
