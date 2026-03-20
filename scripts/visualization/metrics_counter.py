@@ -2,7 +2,6 @@ import json
 import os
 import re
 
-# Папки
 RESULTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "results")
 RAG_DIR = os.path.join(RESULTS_DIR, "rag")
 REPORT_PATH = os.path.join(RESULTS_DIR, "stage3_report.json")
