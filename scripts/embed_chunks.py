@@ -11,8 +11,7 @@ from config import (
     EMBEDDING_MODEL_NAME,
     EMBEDDINGS_DIR,
 )
-from pipeline_utils import embed_texts_hashing
-
+from pipeline_utils import embed_texts_hashing, embed_texts_semantic
 
 def build_output_path(input_filename: str) -> str:
     stem = os.path.splitext(input_filename)[0]
@@ -25,7 +24,12 @@ def embed_chunk_file(input_path: str, output_path: str):
 
     chunks = payload["chunks"]
     texts = [chunk["text"] for chunk in chunks]
-    embeddings = embed_texts_hashing(texts, EMBEDDING_DIMENSION)
+    if EMBEDDING_BACKEND == "hashing":
+        embeddings = embed_texts_hashing(texts, EMBEDDING_DIMENSION)
+    elif EMBEDDING_BACKEND == "semantic":
+        embeddings = embed_texts_semantic(texts, EMBEDDING_MODEL_NAME)
+    else:
+        raise ValueError(f"Unknown embedding backend: {EMBEDDING_BACKEND}")
 
     embedded_chunks = []
     for chunk, embedding in zip(chunks, embeddings):
