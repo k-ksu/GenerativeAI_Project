@@ -1,0 +1,149 @@
+{
+  "total_questions": 44,
+  "accuracy_substring": 0.5455,
+  "exact_match": 0.0,
+  "average_f1": 0.1111,
+  "refusal_rate": 0.1136,
+  "incorrect_cases": [
+    {
+      "question": "What are the four traditional periods of European history?",
+      "expected_answer": "Prehistoric Europe, classical antiquity, the Middle Ages, and the modern era",
+      "model_answer": "Sure, here's a concise answer to the question:\n\nThe four traditional periods of European history are:\n\n- **Ancient history** (c. 400 BCE - 500 CE)\n- **Medieval history** (c. 500 - 1453)\n- **Renaissance history** (c. 1453 - 1750)\n- **Modern history** (c. 1750 - present)",
+      "f1_score": 0.045,
+      "is_refusal": false
+    },
+    {
+      "question": "Who was the Frankish king crowned as Roman Emperor in 800 AD?",
+      "expected_answer": "Charlemagne",
+      "model_answer": "The context does not mention who the Frankish king crowned as Roman Emperor in 800 AD, so I cannot answer this question from the provided context.",
+      "f1_score": 0.0,
+      "is_refusal": true
+    },
+    {
+      "question": "What was the period of renewed interest in classical art and learning in Europe called?",
+      "expected_answer": "The Renaissance",
+      "model_answer": "The period of renewed interest in classical art and learning in Europe was known as the High Renaissance.",
+      "f1_score": 0.118,
+      "is_refusal": false
+    },
+    {
+      "question": "What event is traditionally considered the start of the Reformation?",
+      "expected_answer": "The publication of the 95 Theses by Martin Luther in 1517",
+      "model_answer": "The Reformation began in the 16th century when the Catholic Church began to break away from the authority of the Pope in Rome.",
+      "f1_score": 0.148,
+      "is_refusal": false
+    },
+    {
+      "question": "Which ancient civilization built the palace at Knossos on Crete?",
+      "expected_answer": "The Minoan civilization",
+      "model_answer": "The Palace at Knossos on Crete was built by the Minoic civilization. It was a major center of Minoan culture and was used by the Minoan elite for many years.",
+      "f1_score": 0.143,
+      "is_refusal": false
+    },
+    {
+      "question": "At which battle in 732 did the Franks stop the Muslim advance into Europe?",
+      "expected_answer": "The Battle of Tours (or Battle of Poitiers)",
+      "model_answer": "The passage does not mention a battle in 732 in which the Franks stopped the Muslim advance into Europe, so I cannot answer this question from the provided context.",
+      "f1_score": 0.065,
+      "is_refusal": true
+    },
+    {
+      "question": "What was the name of the pandemic that killed a huge part of Europe's population in the 14th century?",
+      "expected_answer": "The Black Death (or bubonic plague)",
+      "model_answer": "The Black Death, which killed a huge part of Europe's population in the 14th century.",
+      "f1_score": 0.235,
+      "is_refusal": false
+    },
+    {
+      "question": "Who was the leader of the 'Expedition of the Thousand' and a key figure in the unification of Italy?",
+      "expected_answer": "Giuseppe Garibaldi",
+      "model_answer": "The context does not specify the leader of the \"Expedition of the Thousand\" or a key figure in the unification of Italy, so I cannot answer this question from the provided context.",
+      "f1_score": 0.0,
+      "is_refusal": true
+    },
+    {
+      "question": "In what year did Italy become a republic?",
+      "expected_answer": "1946",
+      "model_answer": "The context does not specify the year in which Italy became a republic, so I cannot answer this question from the provided context.",
+      "f1_score": 0.0,
+      "is_refusal": true
+    },
+    {
+      "question": "What was the Muslim-ruled area on the Iberian Peninsula called?",
+      "expected_answer": "Al-Andalus",
+      "model_answer": "The Muslim-ruled area on the Iberian Peninsula was called the Islamic Caliphate.",
+      "f1_score": 0.0,
+      "is_refusal": false
+    },
+    {
+      "question": "Which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor?",
+      "expected_answer": "Philip II",
+      "model_answer": "The context does not provide any information about which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor, so I cannot answer this question from the provided context.",
+      "f1_score": 0.0,
+      "is_refusal": true
+    },
+    {
+      "question": "What were the military campaigns to reconquer the Iberian Peninsula from the Moors called?",
+      "expected_answer": "The Reconquista",
+      "model_answer": "The military campaigns to reconquer the Iberian Peninsula from the Moors were called Reconquista.",
+      "f1_score": 0.167,
+      "is_refusal": false
+    },
+    {
+      "question": "Which French king is known as the 'Sun King'?",
+      "expected_answer": "Louis XIV",
+      "model_answer": "The French king known as the 'Sun King' is Charles VII. He reigned from 1643 to 1654.",
+      "f1_score": 0.0,
+      "is_refusal": false
+    },
+    {
+      "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+      "expected_answer": "The Mona Lisa (or La Gioconda)",
+      "model_answer": "The name of the famous painting by Leonardo da Vinci housed in the Louvre is the <start_of_painting>Mona Lisa.</start_of_painting>",
+      "f1_score": 0.0,
+      "is_refusal": false
+    },
+    {
+      "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+      "expected_answer": "The Arnolfini Portrait",
+      "model_answer": "The title of the famous 15th-century painting by Jan van Eyck depicting a couple is \"The Arnolfina\".",
+      "f1_score": 0.0,
+      "is_refusal": false
+    },
+    {
+      "question": "Which non-Indo-European people inhabited north-western Italy before the rise of Rome?",
+      "expected_answer": "The Etruscans",
+      "model_answer": "The question asks about non-Indo-European people who inhabited north-western Italy before the rise of Rome. However, the passage does not specify which non-Indo-European people were present in Italy.",
+      "f1_score": 0.0,
+      "is_refusal": false
+    },
+    {
+      "question": "Which two powers fought in the Punic Wars?",
+      "expected_answer": "Rome and Carthage",
+      "model_answer": "The Punic Wars were fought between the Roman Republic and the Carthaginian Empire.",
+      "f1_score": 0.154,
+      "is_refusal": false
+    },
+    {
+      "question": "Whose translation of the Bible was key to the development of the modern Standard German language?",
+      "expected_answer": "Martin Luther",
+      "model_answer": "The question and answer are not clear. It would be helpful to provide more context and context for the question and answer.",
+      "f1_score": 0.0,
+      "is_refusal": false
+    },
+    {
+      "question": "What were the major military expeditions by European Christians to the Holy Land called?",
+      "expected_answer": "The Crusades",
+      "model_answer": "The major military expeditions by European Christians to the Holy Land were called Crusades. The first crusade, led by Pope Innocent I, took place from 1095 to 1099 and ended with the defeat of Saladin, the Muslim sultan of Jerusalem. The second crusade, led by Pope Alexander VI, took place from 1202 to 1204 and resulted in the capture of Jerusalem by the Christian Crusaders.",
+      "f1_score": 0.034,
+      "is_refusal": false
+    },
+    {
+      "question": "What was the name of the political regime led by Benito Mussolini in Italy?",
+      "expected_answer": "Fascism",
+      "model_answer": "The name of the political regime led by Benito Mussolini in Italy was the Fascist regime.",
+      "f1_score": 0.0,
+      "is_refusal": false
+    }
+  ]
+}
