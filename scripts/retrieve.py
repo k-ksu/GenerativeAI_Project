@@ -13,10 +13,10 @@ from config import (
     EMBEDDINGS_DIR,
     QUESTIONS_FILE,
     RETRIEVAL_RESULTS_DIR,
+    EMBEDDING_MODEL_NAME,
     TOP_K_VALUES,
 )
-from pipeline_utils import embed_texts_hashing
-
+from pipeline_utils import embed_texts_hashing, embed_texts_semantic
 
 def load_questions():
     with open(QUESTIONS_FILE, "r", encoding="utf-8") as file:
@@ -47,9 +47,15 @@ def load_embeddings(path: str):
 
 def embed_queries(questions):
     texts = [item["question"] for item in questions]
-    if EMBEDDING_BACKEND != "hashing":
+
+    if EMBEDDING_BACKEND == "hashing":
+        return embed_texts_hashing(texts, EMBEDDING_DIMENSION)
+
+    elif EMBEDDING_BACKEND == "semantic":
+        return embed_texts_semantic(texts, EMBEDDING_MODEL_NAME)
+
+    else:
         raise ValueError(f"Unsupported embedding backend: {EMBEDDING_BACKEND}")
-    return embed_texts_hashing(texts, EMBEDDING_DIMENSION)
 
 
 def build_output_filename(chunk_size: int, overlap: int, top_k: int) -> str:
