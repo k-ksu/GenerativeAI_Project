@@ -101,4 +101,31 @@ Q8, Q15, Q21, Q22, Q39: "The context does not mention..." - although the answers
 
 Q36: Expected "The Arnolfini Portrait", the model answered "The Arnolfina" (misnamed)
 
+## Results on Stage 3
+
+By Stage 3 we have a fully working RAG pipeline connected end-to-end. The pipeline takes a question, retrieves relevant text chunks from our corpus, builds a grounded prompt, and generates an answer using a local LLM — all without any internet access or cloud APIs.
+
+**What the pipeline does, step by step:**
+- splits documents into chunks (200 / 500 / 1000 tokens) with configurable overlap
+- embeds every chunk using `all-MiniLM-L6-v2`
+- at query time, embeds the question the same way and ranks chunks by cosine similarity
+- puts the top-k most similar chunks into a prompt and tells `gemma:2b` to answer only from that context
+
+We ran six configurations varying chunk size, overlap, and k, and evaluated them on our 44-question golden dataset using exact match:
+
+| Configuration | Exact Match | Coverage |
+|---|---|---|
+| size=200, overlap=40, **k=5** | **0.159** ✓ best | 1.0 |
+| size=200, overlap=40, k=1 | 0.113 | 1.0 |
+| size=500, overlap=100, k=1 | 0.113 | 1.0 |
+| size=1000, overlap=200, k=5 | 0.113 | 1.0 |
+| size=500, overlap=100, k=5 | 0.091 | 1.0 |
+| size=1000, overlap=200, **k=1** | **0.023** ✗ worst | 1.0 |
+
+A quick note on coverage: it's 1.0 for everything, which sounds great but actually just means the model always returned *something* — not that the answer was correct. A lot of those "answers" are refusals phrased differently. So we mostly look at exact match and failure cases, not coverage.
+
+**Main takeaways:**
+- Small chunks + broad retrieval (k=5) works best
+- Very large chunks with narrow retrieval (k=1) is the worst combination — nearly useless at 0.023
+- There's a 7× performance gap between best and worst config, and the only thing we changed was retrieval design
 
