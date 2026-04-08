@@ -2,7 +2,8 @@ import json
 import os
 import matplotlib.pyplot as plt
 
-METRICS_FILE = "results/stage3_report.json"
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+METRICS_FILE = os.path.join(PROJECT_ROOT, "results", "stage3_report.json")
 
 with open(METRICS_FILE, "r", encoding="utf-8") as f:
     metrics = json.load(f)

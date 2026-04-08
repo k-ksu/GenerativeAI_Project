@@ -2,25 +2,25 @@
   {
     "question": "What is the capital of France?",
     "expected_answer": "Paris",
-    "model_answer": "The context does not provide the capital of France, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not provide information about the capital of France, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
     "question": "What is the capital of Italy?",
     "expected_answer": "Rome",
-    "model_answer": "The context does not mention the capital of Italy, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not specify the capital of Italy, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
     "question": "When did World War II begin?",
     "expected_answer": "1939",
-    "model_answer": "The context does not specify when World War II began, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not specify when World War II began, so I cannot answer this question from the context.",
     "num_chunks_used": 1
   },
   {
     "question": "Who was the first emperor of Rome?",
     "expected_answer": "Augustus",
-    "model_answer": "The context does not mention who the first emperor of Rome was, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not specify the first emperor of Rome, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
@@ -32,19 +32,19 @@
   {
     "question": "What are the four traditional periods of European history?",
     "expected_answer": "Prehistoric Europe, classical antiquity, the Middle Ages, and the modern era",
-    "model_answer": "The context does not provide information about the four traditional periods of European history, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not provide any information about the four traditional periods of European history, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
     "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
     "expected_answer": "476 AD",
-    "model_answer": "The passage does not specify the year in which the fall of the Western Roman Empire is traditionally dated, so I cannot answer this question from the provided context.",
+    "model_answer": "The passage does not specify the year in which the fall of the Western Roman Empire is traditionally dated, so I cannot answer this question from the context.",
     "num_chunks_used": 1
   },
   {
     "question": "Who was the Frankish king crowned as Roman Emperor in 800 AD?",
     "expected_answer": "Charlemagne",
-    "model_answer": "The context does not mention the Frankish king crowned as Roman Emperor in 800 AD, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not mention who the Frankish king crowned as Roman Emperor in 800 AD, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
@@ -56,25 +56,25 @@
   {
     "question": "What event is traditionally considered the start of the Reformation?",
     "expected_answer": "The publication of the 95 Theses by Martin Luther in 1517",
-    "model_answer": "The beginning of the Reformation is traditionally considered to be in 1517, when Luther published The Ninety-Five Theses.",
+    "model_answer": "The context says that the Protestant Reformation began in 1517, when Luther published The Ninety-Five Theses.",
     "num_chunks_used": 1
   },
   {
     "question": "Who was the leader of Nazi Germany during World War II?",
     "expected_answer": "Adolf Hitler",
-    "model_answer": "The context does not specify the leader of Nazi Germany during World War II, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not mention who the leader of Nazi Germany during World War II was, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
     "question": "What was the peace treaty that ended World War I?",
     "expected_answer": "The Treaty of Versailles",
-    "model_answer": "The context does not specify the name of the peace treaty that ended World War I, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not provide information about the peace treaty that ended World War I, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
     "question": "In what year was the Berlin Wall torn down?",
     "expected_answer": "1989",
-    "model_answer": "The context says that the Berlin Wall was torn down in 1989.",
+    "model_answer": "The context does not specify the year in which the Berlin Wall was torn down, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
@@ -86,7 +86,7 @@
   {
     "question": "At which battle in 732 did the Franks stop the Muslim advance into Europe?",
     "expected_answer": "The Battle of Tours (or Battle of Poitiers)",
-    "model_answer": "The context does not mention which battle in 732 the Franks stopped the Muslim advance into Europe, so I cannot answer this question from the context.",
+    "model_answer": "The passage does not specify which battle in 732 stopped the Muslim advance into Europe, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
@@ -98,7 +98,7 @@
   {
     "question": "With which war is Joan of Arc associated?",
     "expected_answer": "The Hundred Years' War",
-    "model_answer": "Joan of Arc is associated with the Hundred Years' War between the House of Valois and the House of Plantagenet.",
+    "model_answer": "According to the context, Joan of Arc is associated with the Hundred Years' War between the House of Valois and the House of Plantagenet.",
     "num_chunks_used": 1
   },
   {
@@ -110,13 +110,13 @@
   {
     "question": "Which maritime republic was a major rival of Genoa and dominated trade in the Mediterranean?",
     "expected_answer": "Venice",
-    "model_answer": "The context does not provide information about which maritime republic was a major rival of Genoa and dominated trade in the Mediterranean, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not provide the answer to this question, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
     "question": "Which famous Florentine family were great patrons of the arts during the Renaissance?",
     "expected_answer": "The Medici",
-    "model_answer": "The Medici family was a banking family and later ducal ruling house that played a major role in patronizing and stimulating the arts during the Renaissance.",
+    "model_answer": "The Medici family was one of the most famous Florentine families during the Renaissance. They were patrons of the arts, and their patronage helped to establish the city as a center of the Renaissance.",
     "num_chunks_used": 1
   },
   {
@@ -134,7 +134,7 @@
   {
     "question": "What was the name given by the Greeks to the Iberian Peninsula, after a river?",
     "expected_answer": "Iberia",
-    "model_answer": "The context does not mention the name given by the Greeks to the Iberian Peninsula, after a river, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not mention the name given by the Greeks to the Iberian Peninsula, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
@@ -146,13 +146,13 @@
   {
     "question": "In which year did Christopher Columbus first reach the Americas?",
     "expected_answer": "1492",
-    "model_answer": "The context does not mention in which year Christopher Columbus first reached the Americas, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not specify the year in which Christopher Columbus first reached the Americas, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
     "question": "Which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor?",
     "expected_answer": "Philip II",
-    "model_answer": "The context does not provide any information about which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not mention the name of any Spanish king who ruled during the country's 'Golden Age' and was married to Mary Tudor, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
@@ -170,25 +170,25 @@
   {
     "question": "In which year did the French Revolution begin?",
     "expected_answer": "1789",
-    "model_answer": "The context does not mention in which year the French Revolution began, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not mention the year in which the French Revolution began, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
     "question": "Who was the famous French military leader and emperor who was finally defeated at Waterloo?",
     "expected_answer": "Napoleon Bonaparte",
-    "model_answer": "The context does not mention the name of a famous French military leader and emperor who was finally defeated at Waterloo, so I cannot answer this question from the provided context.",
+    "model_answer": "The answer is Napoleon Bonaparte.\n\nThe context does not specify who the famous French military leader and emperor was who was finally defeated at Waterloo.",
     "num_chunks_used": 1
   },
   {
     "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
     "expected_answer": "The Mona Lisa (or La Gioconda)",
-    "model_answer": "The name of the painting by Leonardo da Vinci, housed in the Louvre, is not explicitly mentioned in the context, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not mention the name of a famous painting by Leonardo da Vinci housed in the Louvre, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
     "question": "What invention by Johannes Gutenberg revolutionized the spread of knowledge?",
     "expected_answer": "The printing press",
-    "model_answer": "The context does not mention what invention by Johannes Gutenberg revolutionized the spread of knowledge, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not specify what invention by Johannes Gutenberg revolutionized the spread of knowledge, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
@@ -200,13 +200,13 @@
   {
     "question": "Which artistic style, known for its drama and grandeur, followed the Renaissance?",
     "expected_answer": "Baroque",
-    "model_answer": "The context does not specify any artistic style, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not specify which artistic style followed the Renaissance, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
     "question": "Who is the sculptor of the famous statue of 'David'?",
     "expected_answer": "Michelangelo",
-    "model_answer": "The context does not mention the sculptor of the famous statue of 'David', so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not provide information about the sculptor of the famous statue of 'David', so I cannot answer this question from the context.",
     "num_chunks_used": 1
   },
   {
@@ -218,7 +218,7 @@
   {
     "question": "Which non-Indo-European people inhabited north-western Italy before the rise of Rome?",
     "expected_answer": "The Etruscans",
-    "model_answer": "The context does not mention which non-Indo-European people inhabited north-western Italy before the rise of Rome, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not specify which non-Indo-European people inhabited north-western Italy before the rise of Rome, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
@@ -230,31 +230,31 @@
   {
     "question": "Which two powers fought in the Punic Wars?",
     "expected_answer": "Rome and Carthage",
-    "model_answer": "The context does not mention which two powers fought in the Punic Wars, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not provide information about which two powers fought in the Punic Wars, so I cannot answer this question from the context.",
     "num_chunks_used": 1
   },
   {
     "question": "Whose translation of the Bible was key to the development of the modern Standard German language?",
     "expected_answer": "Martin Luther",
-    "model_answer": "The passage does not specify the name of the translator of the Bible, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not specify the name of the person who translated the Bible, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
     "question": "The kingdom of which Germanic tribe formed the basis for the state in modern-day France?",
     "expected_answer": "The Franks",
-    "model_answer": "The context does not provide any information about the Germanic tribe that formed the basis for the state in modern-day France. Therefore, I cannot answer this question from the provided context.",
+    "model_answer": "The context does not specify the Germanic tribe that formed the basis for the state in modern-day France, so I cannot answer this question from the provided context.",
     "num_chunks_used": 1
   },
   {
     "question": "What were the major military expeditions by European Christians to the Holy Land called?",
     "expected_answer": "The Crusades",
-    "model_answer": "The context does not mention the major military expeditions by European Christians to the Holy Land, so I cannot answer this question from the provided context.",
+    "model_answer": "The context does not provide any information about the major military expeditions by European Christians to the Holy Land, so I cannot answer this question from the context.",
     "num_chunks_used": 1
   },
   {
     "question": "Which famous painting by Pablo Picasso depicts the horrors of the bombing of a town during the Spanish Civil War?",
     "expected_answer": "Guernica",
-    "model_answer": "The context does not mention the name of a famous painting by Pablo Picasso that depicts the horrors of the bombing of a town during the Spanish Civil War. Therefore, I cannot answer this question from the provided context.",
+    "model_answer": "The context does not mention which famous painting by Pablo Picasso depicts the horrors of the bombing of a town during the Spanish Civil War, so I cannot answer this question from the context.",
     "num_chunks_used": 1
   },
   {

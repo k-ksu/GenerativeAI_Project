@@ -1,0 +1,2155 @@
+{
+  "retrieval_size_1000_overlap_200_k_1.json": {
+    "embedding_backend": "semantic",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "chunk_size": 1000,
+    "overlap": 200,
+    "top_k": 1,
+    "num_questions": 44,
+    "document_recall": 0.7727,
+    "answer_recall": 0.5227,
+    "missed_questions": [
+      {
+        "question_id": "q_005",
+        "question": "What year did the French Revolution start?",
+        "source_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "list_of_conflicts_in_europe"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_012",
+        "question": "What was the peace treaty that ended World War I?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_013",
+        "question": "In what year was the Berlin Wall torn down?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_014",
+        "question": "Which ancient civilization built the palace at Knossos on Crete?",
+        "source_doc_ids": [
+          "ancient_greek_architecture_wikipedia",
+          "history_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "ancient_greek_architecture_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_015",
+        "question": "At which battle in 732 did the Franks stop the Muslim advance into Europe?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_016",
+        "question": "What was the name of the pandemic that killed a huge part of Europe's population in the 14th century?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_017",
+        "question": "With which war is Joan of Arc associated?",
+        "source_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_018",
+        "question": "Who wrote the famous political treatise, 'The Prince'?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "20_influential_leaders_in_european_history"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_025",
+        "question": "In which year did Christopher Columbus first reach the Americas?",
+        "source_doc_ids": [
+          "history_of_spain_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_026",
+        "question": "Which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor?",
+        "source_doc_ids": [
+          "history_of_spain_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "20_influential_leaders_in_european_history"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_028",
+        "question": "Which French king is known as the 'Sun King'?",
+        "source_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_029",
+        "question": "In which year did the French Revolution begin?",
+        "source_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_030",
+        "question": "Who was the famous French military leader and emperor who was finally defeated at Waterloo?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "20_influential_leaders_in_european_history"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_032",
+        "question": "What invention by Johannes Gutenberg revolutionized the spread of knowledge?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_034",
+        "question": "Which artistic style, known for its drama and grandeur, followed the Renaissance?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_035",
+        "question": "Who is the sculptor of the famous statue of 'David'?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "french_art_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "french_art_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_041",
+        "question": "The kingdom of which Germanic tribe formed the basis for the state in modern-day France?",
+        "source_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_043",
+        "question": "Which famous painting by Pablo Picasso depicts the horrors of the bombing of a town during the Spanish Civil War?",
+        "source_doc_ids": [
+          "20th_century_western_painting_wikipedia",
+          "history_of_spain_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "20th_century_western_painting_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      }
+    ]
+  },
+  "retrieval_size_1000_overlap_200_k_10.json": {
+    "embedding_backend": "semantic",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "chunk_size": 1000,
+    "overlap": 200,
+    "top_k": 10,
+    "num_questions": 44,
+    "document_recall": 1.0,
+    "answer_recall": 0.8636,
+    "missed_questions": [
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "list_of_conflicts_in_europe"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia",
+          "history_of_europe_wikipedia",
+          "history_of_france_wikipedia",
+          "history_of_italy_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_france_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_014",
+        "question": "Which ancient civilization built the palace at Knossos on Crete?",
+        "source_doc_ids": [
+          "ancient_greek_architecture_wikipedia",
+          "history_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "ancient_greek_architecture_wikipedia",
+          "art_of_europe_wikipedia",
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia",
+          "gothic_architecture_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "12_famous_french_artists_who_ruled_the_world",
+          "20th_century_western_painting_wikipedia",
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_france_wikipedia",
+          "history_of_italy_wikipedia",
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      }
+    ]
+  },
+  "retrieval_size_1000_overlap_200_k_3.json": {
+    "embedding_backend": "semantic",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "chunk_size": 1000,
+    "overlap": 200,
+    "top_k": 3,
+    "num_questions": 44,
+    "document_recall": 0.9545,
+    "answer_recall": 0.7955,
+    "missed_questions": [
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "list_of_conflicts_in_europe"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_014",
+        "question": "Which ancient civilization built the palace at Knossos on Crete?",
+        "source_doc_ids": [
+          "ancient_greek_architecture_wikipedia",
+          "history_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "ancient_greek_architecture_wikipedia",
+          "art_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_016",
+        "question": "What was the name of the pandemic that killed a huge part of Europe's population in the 14th century?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_italy_wikipedia",
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_018",
+        "question": "Who wrote the famous political treatise, 'The Prince'?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "20_influential_leaders_in_european_history",
+          "history_of_italy_wikipedia",
+          "history_of_spain_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia",
+          "gothic_architecture_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_034",
+        "question": "Which artistic style, known for its drama and grandeur, followed the Renaissance?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_035",
+        "question": "Who is the sculptor of the famous statue of 'David'?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "ancient_greek_architecture_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_italy_wikipedia",
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      }
+    ]
+  },
+  "retrieval_size_1000_overlap_200_k_5.json": {
+    "embedding_backend": "semantic",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "chunk_size": 1000,
+    "overlap": 200,
+    "top_k": 5,
+    "num_questions": 44,
+    "document_recall": 0.9773,
+    "answer_recall": 0.8409,
+    "missed_questions": [
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "list_of_conflicts_in_europe"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_italy_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_france_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_014",
+        "question": "Which ancient civilization built the palace at Knossos on Crete?",
+        "source_doc_ids": [
+          "ancient_greek_architecture_wikipedia",
+          "history_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "ancient_greek_architecture_wikipedia",
+          "art_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_016",
+        "question": "What was the name of the pandemic that killed a huge part of Europe's population in the 14th century?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_italy_wikipedia",
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia",
+          "gothic_architecture_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_034",
+        "question": "Which artistic style, known for its drama and grandeur, followed the Renaissance?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "20th_century_western_painting_wikipedia",
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_italy_wikipedia",
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      }
+    ]
+  },
+  "retrieval_size_200_overlap_40_k_1.json": {
+    "embedding_backend": "semantic",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "chunk_size": 200,
+    "overlap": 40,
+    "top_k": 1,
+    "num_questions": 44,
+    "document_recall": 0.7273,
+    "answer_recall": 0.5227,
+    "missed_questions": [
+      {
+        "question_id": "q_001",
+        "question": "What is the capital of France?",
+        "source_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_003",
+        "question": "When did World War II begin?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "list_of_conflicts_in_europe"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_004",
+        "question": "Who was the first emperor of Rome?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_006",
+        "question": "What are the four traditional periods of European history?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "list_of_conflicts_in_europe"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_015",
+        "question": "At which battle in 732 did the Franks stop the Muslim advance into Europe?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_spain_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_016",
+        "question": "What was the name of the pandemic that killed a huge part of Europe's population in the 14th century?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_018",
+        "question": "Who wrote the famous political treatise, 'The Prince'?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_spain_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_021",
+        "question": "Who was the leader of the 'Expedition of the Thousand' and a key figure in the unification of Italy?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_024",
+        "question": "What was the Muslim-ruled area on the Iberian Peninsula called?",
+        "source_doc_ids": [
+          "history_of_spain_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_025",
+        "question": "In which year did Christopher Columbus first reach the Americas?",
+        "source_doc_ids": [
+          "history_of_spain_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_027",
+        "question": "What were the military campaigns to reconquer the Iberian Peninsula from the Moors called?",
+        "source_doc_ids": [
+          "history_of_spain_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_028",
+        "question": "Which French king is known as the 'Sun King'?",
+        "source_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_030",
+        "question": "Who was the famous French military leader and emperor who was finally defeated at Waterloo?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "20_influential_leaders_in_european_history"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "french_art_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_032",
+        "question": "What invention by Johannes Gutenberg revolutionized the spread of knowledge?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_033",
+        "question": "To which artistic era did Michelangelo belong?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_034",
+        "question": "Which artistic style, known for its drama and grandeur, followed the Renaissance?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_035",
+        "question": "Who is the sculptor of the famous statue of 'David'?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "ancient_greek_architecture_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_037",
+        "question": "Which non-Indo-European people inhabited north-western Italy before the rise of Rome?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_041",
+        "question": "The kingdom of which Germanic tribe formed the basis for the state in modern-day France?",
+        "source_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_042",
+        "question": "What were the major military expeditions by European Christians to the Holy Land called?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "list_of_conflicts_in_europe"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      }
+    ]
+  },
+  "retrieval_size_200_overlap_40_k_10.json": {
+    "embedding_backend": "semantic",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "chunk_size": 200,
+    "overlap": 40,
+    "top_k": 10,
+    "num_questions": 44,
+    "document_recall": 1.0,
+    "answer_recall": 0.8409,
+    "missed_questions": [
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "list_of_conflicts_in_europe"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia",
+          "gothic_architecture_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_035",
+        "question": "Who is the sculptor of the famous statue of 'David'?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "ancient_greek_architecture_wikipedia",
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "20th_century_western_painting_wikipedia",
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_037",
+        "question": "Which non-Indo-European people inhabited north-western Italy before the rise of Rome?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_italy_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_france_wikipedia",
+          "history_of_italy_wikipedia",
+          "history_of_spain_wikipedia",
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      }
+    ]
+  },
+  "retrieval_size_200_overlap_40_k_3.json": {
+    "embedding_backend": "semantic",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "chunk_size": 200,
+    "overlap": 40,
+    "top_k": 3,
+    "num_questions": 44,
+    "document_recall": 0.9318,
+    "answer_recall": 0.7727,
+    "missed_questions": [
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "list_of_conflicts_in_europe"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_018",
+        "question": "Who wrote the famous political treatise, 'The Prince'?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_spain_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_025",
+        "question": "In which year did Christopher Columbus first reach the Americas?",
+        "source_doc_ids": [
+          "history_of_spain_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_italy_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_027",
+        "question": "What were the military campaigns to reconquer the Iberian Peninsula from the Moors called?",
+        "source_doc_ids": [
+          "history_of_spain_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_spain_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_032",
+        "question": "What invention by Johannes Gutenberg revolutionized the spread of knowledge?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_035",
+        "question": "Who is the sculptor of the famous statue of 'David'?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "ancient_greek_architecture_wikipedia",
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "20th_century_western_painting_wikipedia",
+          "art_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_037",
+        "question": "Which non-Indo-European people inhabited north-western Italy before the rise of Rome?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_italy_wikipedia",
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_041",
+        "question": "The kingdom of which Germanic tribe formed the basis for the state in modern-day France?",
+        "source_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_france_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      }
+    ]
+  },
+  "retrieval_size_200_overlap_40_k_5.json": {
+    "embedding_backend": "semantic",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "chunk_size": 200,
+    "overlap": 40,
+    "top_k": 5,
+    "num_questions": 44,
+    "document_recall": 1.0,
+    "answer_recall": 0.7955,
+    "missed_questions": [
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "list_of_conflicts_in_europe"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_018",
+        "question": "Who wrote the famous political treatise, 'The Prince'?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_italy_wikipedia",
+          "history_of_spain_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_027",
+        "question": "What were the military campaigns to reconquer the Iberian Peninsula from the Moors called?",
+        "source_doc_ids": [
+          "history_of_spain_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_spain_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_035",
+        "question": "Who is the sculptor of the famous statue of 'David'?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "ancient_greek_architecture_wikipedia",
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "20th_century_western_painting_wikipedia",
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_037",
+        "question": "Which non-Indo-European people inhabited north-western Italy before the rise of Rome?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_italy_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_italy_wikipedia",
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      }
+    ]
+  },
+  "retrieval_size_500_overlap_100_k_1.json": {
+    "embedding_backend": "semantic",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "chunk_size": 500,
+    "overlap": 100,
+    "top_k": 1,
+    "num_questions": 44,
+    "document_recall": 0.7273,
+    "answer_recall": 0.5909,
+    "missed_questions": [
+      {
+        "question_id": "q_002",
+        "question": "What is the capital of Italy?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "list_of_conflicts_in_europe"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_012",
+        "question": "What was the peace treaty that ended World War I?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_013",
+        "question": "In what year was the Berlin Wall torn down?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_014",
+        "question": "Which ancient civilization built the palace at Knossos on Crete?",
+        "source_doc_ids": [
+          "ancient_greek_architecture_wikipedia",
+          "history_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "ancient_greek_architecture_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_015",
+        "question": "At which battle in 732 did the Franks stop the Muslim advance into Europe?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_016",
+        "question": "What was the name of the pandemic that killed a huge part of Europe's population in the 14th century?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_017",
+        "question": "With which war is Joan of Arc associated?",
+        "source_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_018",
+        "question": "Who wrote the famous political treatise, 'The Prince'?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_021",
+        "question": "Who was the leader of the 'Expedition of the Thousand' and a key figure in the unification of Italy?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_025",
+        "question": "In which year did Christopher Columbus first reach the Americas?",
+        "source_doc_ids": [
+          "history_of_spain_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_026",
+        "question": "Which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor?",
+        "source_doc_ids": [
+          "history_of_spain_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "20_influential_leaders_in_european_history"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_028",
+        "question": "Which French king is known as the 'Sun King'?",
+        "source_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "20_influential_leaders_in_european_history"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_030",
+        "question": "Who was the famous French military leader and emperor who was finally defeated at Waterloo?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "20_influential_leaders_in_european_history"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_032",
+        "question": "What invention by Johannes Gutenberg revolutionized the spread of knowledge?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_034",
+        "question": "Which artistic style, known for its drama and grandeur, followed the Renaissance?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_035",
+        "question": "Who is the sculptor of the famous statue of 'David'?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "french_art_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "12_famous_french_artists_who_ruled_the_world"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_037",
+        "question": "Which non-Indo-European people inhabited north-western Italy before the rise of Rome?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_spain_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_041",
+        "question": "The kingdom of which Germanic tribe formed the basis for the state in modern-day France?",
+        "source_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      }
+    ]
+  },
+  "retrieval_size_500_overlap_100_k_10.json": {
+    "embedding_backend": "semantic",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "chunk_size": 500,
+    "overlap": 100,
+    "top_k": 10,
+    "num_questions": 44,
+    "document_recall": 1.0,
+    "answer_recall": 0.8636,
+    "missed_questions": [
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "list_of_conflicts_in_europe"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia",
+          "history_of_europe_wikipedia",
+          "history_of_italy_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "french_art_wikipedia",
+          "history_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_017",
+        "question": "With which war is Joan of Arc associated?",
+        "source_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_france_wikipedia",
+          "history_of_spain_wikipedia",
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia",
+          "gothic_architecture_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "12_famous_french_artists_who_ruled_the_world",
+          "20th_century_western_painting_wikipedia",
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_italy_wikipedia",
+          "history_of_spain_wikipedia",
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      }
+    ]
+  },
+  "retrieval_size_500_overlap_100_k_3.json": {
+    "embedding_backend": "semantic",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "chunk_size": 500,
+    "overlap": 100,
+    "top_k": 3,
+    "num_questions": 44,
+    "document_recall": 0.8864,
+    "answer_recall": 0.75,
+    "missed_questions": [
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "list_of_conflicts_in_europe"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_016",
+        "question": "What was the name of the pandemic that killed a huge part of Europe's population in the 14th century?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_spain_wikipedia",
+          "list_of_conflicts_in_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_017",
+        "question": "With which war is Joan of Arc associated?",
+        "source_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_france_wikipedia",
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_018",
+        "question": "Who wrote the famous political treatise, 'The Prince'?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "20_influential_leaders_in_european_history",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_021",
+        "question": "Who was the leader of the 'Expedition of the Thousand' and a key figure in the unification of Italy?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_026",
+        "question": "Which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor?",
+        "source_doc_ids": [
+          "history_of_spain_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "20_influential_leaders_in_european_history",
+          "history_of_spain_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_032",
+        "question": "What invention by Johannes Gutenberg revolutionized the spread of knowledge?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_034",
+        "question": "Which artistic style, known for its drama and grandeur, followed the Renaissance?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_035",
+        "question": "Who is the sculptor of the famous statue of 'David'?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "ancient_greek_architecture_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "12_famous_french_artists_who_ruled_the_world",
+          "20th_century_western_painting_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_037",
+        "question": "Which non-Indo-European people inhabited north-western Italy before the rise of Rome?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_italy_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_italy_wikipedia",
+          "history_of_spain_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      }
+    ]
+  },
+  "retrieval_size_500_overlap_100_k_5.json": {
+    "embedding_backend": "semantic",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "chunk_size": 500,
+    "overlap": 100,
+    "top_k": 5,
+    "num_questions": 44,
+    "document_recall": 0.9318,
+    "answer_recall": 0.8409,
+    "missed_questions": [
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "list_of_conflicts_in_europe"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "french_art_wikipedia",
+          "history_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_016",
+        "question": "What was the name of the pandemic that killed a huge part of Europe's population in the 14th century?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_italy_wikipedia",
+          "history_of_spain_wikipedia",
+          "list_of_conflicts_in_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_017",
+        "question": "With which war is Joan of Arc associated?",
+        "source_doc_ids": [
+          "history_of_france_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_france_wikipedia",
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_032",
+        "question": "What invention by Johannes Gutenberg revolutionized the spread of knowledge?",
+        "source_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_german_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "renaissance_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": true
+      },
+      {
+        "question_id": "q_035",
+        "question": "Who is the sculptor of the famous statue of 'David'?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia",
+          "renaissance_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "ancient_greek_architecture_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "document_hit": false,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "source_doc_ids": [
+          "art_of_europe_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "12_famous_french_artists_who_ruled_the_world",
+          "20th_century_western_painting_wikipedia",
+          "art_of_europe_wikipedia",
+          "french_art_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "source_doc_ids": [
+          "history_of_italy_wikipedia"
+        ],
+        "retrieved_doc_ids": [
+          "history_of_europe_wikipedia",
+          "history_of_italy_wikipedia",
+          "history_of_spain_wikipedia",
+          "list_of_conflicts_in_europe_wikipedia"
+        ],
+        "document_hit": true,
+        "answer_hit": false
+      }
+    ]
+  }
+}

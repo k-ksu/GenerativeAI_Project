@@ -4,6 +4,7 @@ CLEANED_DATA_DIR = "data/cleaned"
 CHUNKS_DIR = "data/chunks"
 EMBEDDINGS_DIR = "data/embeddings"
 QUESTIONS_FILE = "data/questions.json"
+RETRIEVAL_LABELS_FILE = "data/retrieval_labels.json"
 RESULTS_DIR = "results"
 RETRIEVAL_RESULTS_DIR = f"{RESULTS_DIR}/retrieval"
 RAG_RESULTS_DIR = f"{RESULTS_DIR}/rag"
@@ -30,7 +31,7 @@ CHUNK_CONFIGS = [
 EMBEDDING_BACKEND = "semantic"
 EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
 EMBEDDING_DIMENSION = 384
-TOP_K_VALUES = [1, 5]
+TOP_K_VALUES = [1, 3, 5, 10]
 
 DEFAULT_PROMPT_TEMPLATE = """Answer the following history question concisely.
 
