@@ -1,131 +1,307 @@
-# Mini-RAG Project – Baseline
+# Mini-RAG Project — World History QA
+
+**Research question:** How do retrieval design choices (chunk size, top-k, embedding model, retrieval method, prompt style) affect the faithfulness and accuracy of a local LLM's answers?
+
+**Team:** Janna Ivanova & Ksenia Korchagina — Innopolis University  
+**Compute:** Apple Silicon Mac M3/M4, fully local (no cloud APIs)
+
+---
+
+## Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [Setup](#setup)
+3. [Corpus & Data](#corpus--data)
+4. [Pipeline — How It Works](#pipeline--how-it-works)
+5. [Running the Pipeline](#running-the-pipeline)
+6. [Evaluation Scripts](#evaluation-scripts)
+7. [Results by Stage](#results-by-stage)
+8. [File Structure](#file-structure)
+
+---
 
 ## Project Overview
 
-This project investigates question answering over a domain-specific corpus (World History documents).  
+This is a **mini Retrieval-Augmented Generation (RAG)** system for factual question answering over a World History document corpus.
 
-In Stage 2, we implement a **baseline system** where a local Large Language Model (LLM) answers factual questions **without retrieval**.  
+The system is built in four stages:
 
-This serves as a controlled reference point before introducing retrieval mechanisms in later stages.
+| Stage | What was built |
+|---|---|
+| **1 — Proposal** | Research plan, corpus design, golden dataset spec |
+| **2 — Baseline** | No-RAG baseline: `gemma:2b` answers questions from memory only |
+| **3 — RAG Pipeline** | Full RAG: chunking → MiniLM embeddings → cosine retrieval → grounded generation |
+| **4 — Improvements** | BGE-large embeddings, BM25, Hybrid RRF retrieval, extraction-style prompt, richer evaluation |
 
+---
 
-## Python Environment Setup
+## Setup
 
-It is recommended to use a virtual environment:
+### 1. Python environment
 
 ```bash
 python -m venv venv
 source venv/bin/activate
-```
-
-Install dependencies:
-
-```bash
 pip install -r requirements.txt
 ```
 
-## Baseline Definition
-
-Baseline = Local LLM answering questions without access to external documents.
-
-Model used: **gemma:2b** (via Ollama)
-
-No retrieval.
-No embeddings.
-No document grounding.
-
-
-## Setup Instructions (Mac M1/M2)
-
-### 1. Install Ollama
+### 2. Install and start Ollama
 
 ```bash
 brew install ollama
-```
-
-### 2. Start Ollama server
-
-```bash
-ollama serve
-```
-
-### 3. Download model
-
-```bash
+ollama serve          # keep this running in a separate terminal
 ollama pull gemma:2b
 ```
 
+> **Note:** `ollama serve` must be running whenever you execute any script that calls the LLM (`run_baseline.py`, `run_rag.py`). All embedding and retrieval scripts work without Ollama.
 
-## Prepare data
+---
 
-If you add new pdf documnets you should run:
+## Corpus & Data
+
+The corpus lives in `data/raw/` — 15 Wikipedia PDF articles covering European history and art:
+
+```
+Art of Europe, History of Europe, History of France, History of Germany,
+History of Italy, History of Spain, Renaissance, French art,
+20th-century Western painting, Ancient Greek architecture, Gothic architecture,
+Famous Europeans, 12 Famous French Artists, 20 Influential Leaders,
+List of conflicts in Europe
+```
+
+The golden evaluation dataset is `data/questions.json` — **44 manually verified QA pairs**.
+
+If you add new PDFs to `data/raw/`, re-run the full preparation pipeline:
+
+```bash
+python scripts/prepare_data.py         # PDF → plain text
+python scripts/clean_processed_texts.py # clean OCR artefacts
+python scripts/chunk_documents.py       # split into chunks
+python scripts/embed_chunks.py          # MiniLM embeddings
+python scripts/embed_chunks_bge.py      # BGE-large embeddings
+```
+
+---
+
+## Pipeline — How It Works
+
+```
+data/raw/ (PDFs)
+    │
+    ▼  prepare_data.py
+data/processed/ (raw text)
+    │
+    ▼  clean_processed_texts.py
+data/cleaned/ (cleaned text)
+    │
+    ▼  chunk_documents.py
+data/chunks/ (chunk_size × overlap configs)
+    │
+    ├──▶ embed_chunks.py      → data/embeddings/     (MiniLM, 384-dim)
+    └──▶ embed_chunks_bge.py  → data/embeddings_bge/ (BGE-large, 1024-dim)
+                │
+                ▼  retrieve.py / retrieve_bge.py / retrieve_bm25.py / retrieve_hybrid.py
+        results/retrieval/ (ranked chunk lists per question)
+                │
+                ▼  run_rag.py
+        results/rag/ (model answers)
+                │
+                ▼  evaluate_rag.py / evaluate_retrieval.py / score_faithfulness.py
+        results/reports/ (metrics)
+```
+
+### Retrieval methods
+
+| Method | Script | How it works |
+|---|---|---|
+| **MiniLM dense** | `retrieve.py` | Cosine similarity, `all-MiniLM-L6-v2` (384-dim) |
+| **BGE dense** | `retrieve_bge.py` | Cosine similarity, `BAAI/bge-large-en-v1.5` (1024-dim) |
+| **BM25** | `retrieve_bm25.py` | Lexical TF-IDF-like ranking via `rank_bm25` |
+| **Hybrid RRF** | `retrieve_hybrid.py` | Reciprocal Rank Fusion of BGE + BM25 rankings |
+
+### Prompt styles (in `run_rag.py`)
+
+| Style | Behaviour |
+|---|---|
+| `default` | Grounded prompt: "Answer ONLY from context, say Not found if absent" |
+| `extraction` | Short-answer prompt: "Extract the exact answer — name, date, or brief phrase" |
+
+---
+
+## Running the Pipeline
+
+### Full pipeline from scratch (MiniLM)
 
 ```bash
 python scripts/prepare_data.py
+python scripts/clean_processed_texts.py
+python scripts/chunk_documents.py
+python scripts/embed_chunks.py
+python scripts/retrieve.py
+python scripts/run_rag.py
 ```
 
-## Running the Baseline
+### Add BGE-large retrieval
 
 ```bash
-python scripts/run_baseline.py
+python scripts/embed_chunks_bge.py   # ~5 min, downloads 1.3 GB model on first run
+python scripts/retrieve_bge.py
+python scripts/run_rag.py --filter "bge_"
 ```
 
-Outputs will be saved to <u>results/baseline_outputs.json</u>
-
-
-## Evaluation
+### Add BM25 retrieval
 
 ```bash
-python scripts/evaluate.py
+python scripts/retrieve_bm25.py
+python scripts/run_rag.py --filter "bm25_"
 ```
 
-Metric: Accuracy = Correct answers / Total questions. This provides a quantitative baseline before introducing retrieval.
+### Add Hybrid retrieval (requires BGE + BM25 to be done first)
 
+```bash
+python scripts/retrieve_hybrid.py
+python scripts/run_rag.py --filter "hybrid_"
+```
 
+### Run with extraction-style prompt
 
-## Results on Stage 2
+```bash
+# on a specific config (fast):
+python scripts/run_rag.py --filter "size_200_overlap_40_k_5" --prompt-style extraction
 
-The model's accuracy is currently approximately **0.57**, as the number of correct answers is **25/44**.
+# on all files:
+python scripts/run_rag.py --prompt-style extraction
+```
 
-Major issues:
+### Useful flags for `run_rag.py`
 
-1. Completely incorrect answers (factual errors)
+```bash
+--filter "bge_"              # only process files whose name contains this substring
+--prompt-style extraction    # use extraction prompt instead of default
+--no-skip-existing           # rerun even if output already exists
+```
 
-Q4: Expected Augustus, but the model answered Julius Caesar (who was assassinated 17 years before the creation of the empire).
+### Baseline (no retrieval)
 
-2. The model refuses to answer
+```bash
+python scripts/run_baseline.py       # saves results/baseline_outputs.json
+python scripts/evaluate.py           # substring accuracy, F1, exact match
+```
 
-Q8, Q15, Q21, Q22, Q39: "The context does not mention..." - although the answers are in the documents
+---
 
-3. Incomplete/imprecise wording
+## Evaluation Scripts
 
-Q36: Expected "The Arnolfini Portrait", the model answered "The Arnolfina" (misnamed)
+| Script | Input | Output | Metrics |
+|---|---|---|---|
+| `evaluate_retrieval.py` | `results/retrieval/` | `results/reports/retrieval_report.json` | document_recall, answer_recall |
+| `evaluate_rag.py` | `results/rag/` | `results/reports/rag_evaluation_report.json` | contains_match, F1, semantic_similarity, refusal_rate |
+| `score_faithfulness.py` | `results/rag/` + `results/retrieval/` | `results/reports/faithfulness_report.json` | faithfulness_score (supported / partial / unsupported) |
+| `scripts/visualization/metrics_counter.py` | `results/rag/` | `results/stage3_report.json` | exact_match (relaxed), coverage |
+| `scripts/visualization/result_graphics.py` | `results/stage3_report.json` | charts (matplotlib) | bar + scatter plots |
 
-## Results on Stage 3
+---
 
-By Stage 3 we have a fully working RAG pipeline connected end-to-end. The pipeline takes a question, retrieves relevant text chunks from our corpus, builds a grounded prompt, and generates an answer using a local LLM — all without any internet access or cloud APIs.
+## Results by Stage
 
-**What the pipeline does, step by step:**
-- splits documents into chunks (200 / 500 / 1000 tokens) with configurable overlap
-- embeds every chunk using `all-MiniLM-L6-v2`
-- at query time, embeds the question the same way and ranks chunks by cosine similarity
-- puts the top-k most similar chunks into a prompt and tells `gemma:2b` to answer only from that context
+### Stage 2 — Baseline (no RAG)
 
-We ran six configurations varying chunk size, overlap, and k, and evaluated them on our 44-question golden dataset using exact match:
+Model: `gemma:2b` answering from memory, no documents.
 
-| Configuration | Exact Match | Coverage |
-|---|---|---|
-| size=200, overlap=40, **k=5** | **0.159** ✓ best | 1.0 |
-| size=200, overlap=40, k=1 | 0.113 | 1.0 |
-| size=500, overlap=100, k=1 | 0.113 | 1.0 |
-| size=1000, overlap=200, k=5 | 0.113 | 1.0 |
-| size=500, overlap=100, k=5 | 0.091 | 1.0 |
-| size=1000, overlap=200, **k=1** | **0.023** ✗ worst | 1.0 |
+- **Substring accuracy: 0.57** (25 / 44 correct)
+- Main failure modes: factual hallucinations, refusals, imprecise wording
 
-A quick note on coverage: it's 1.0 for everything, which sounds great but actually just means the model always returned *something* — not that the answer was correct. A lot of those "answers" are refusals phrased differently. So we mostly look at exact match and failure cases, not coverage.
+### Stage 3 — RAG with MiniLM (6 configurations)
 
-**Main takeaways:**
-- Small chunks + broad retrieval (k=5) works best
-- Very large chunks with narrow retrieval (k=1) is the worst combination — nearly useless at 0.023
-- There's a 7× performance gap between best and worst config, and the only thing we changed was retrieval design
+| Configuration | Exact Match (relaxed) |
+|---|---|
+| size=200, overlap=40, k=5 | **0.159** ✓ best |
+| size=200, overlap=40, k=1 | 0.113 |
+| size=500, overlap=100, k=1 | 0.113 |
+| size=1000, overlap=200, k=5 | 0.113 |
+| size=500, overlap=100, k=5 | 0.091 |
+| size=1000, overlap=200, k=1 | **0.023** ✗ worst |
 
+Key finding: 7× performance gap from retrieval design alone, generator unchanged.
+
+### Stage 4 — Retrieval & Prompt Improvements
+
+All results at `size=200, overlap=40, k=5`.  
+Metrics from `evaluate_rag.py` (contains_match = relaxed substring) and `score_faithfulness.py`.
+
+| Method | Prompt | Contains↑ | F1↑ | Sem.Sim↑ | Refusals↓ | Faithfulness↑ |
+|---|---|---|---|---|---|---|
+| MiniLM | default | 0.227 | 0.070 | 0.460 | 0.705 | 0.239 |
+| BGE-large | default | 0.204 | 0.065 | 0.465 | 0.705 | 0.261 |
+| BM25 | default | 0.204 | 0.043 | 0.440 | 0.773 | 0.205 |
+| Hybrid RRF | default | 0.159 | 0.062 | 0.453 | 0.750 | 0.193 |
+| MiniLM | extraction | 0.341 | 0.092 | **0.494** | 0.568 | 0.318 |
+| BGE-large | extraction | 0.318 | 0.084 | 0.487 | 0.523 | 0.375 |
+| BM25 | extraction | 0.273 | 0.064 | 0.465 | 0.568 | 0.318 |
+| **Hybrid RRF** | **extraction** | **0.364** | **0.092** | 0.470 | **0.455** | **0.386** |
+
+**Retrieval quality** (answer_recall at k=5):
+
+| Method | size=200 | size=500 | size=1000 |
+|---|---|---|---|
+| MiniLM | 0.795 | 0.841 | 0.841 |
+| BM25 | 0.705 | 0.864 | 0.841 |
+| BGE-large | **0.886** | 0.864 | 0.864 |
+| Hybrid RRF | 0.864 | 0.864 | **0.886** |
+
+**Key Stage 4 findings:**
+- Extraction prompt is the single biggest win: refusals drop from ~70% to ~45–57%
+- BGE-large retrieves correct answers in 88.6% of cases vs 79.5% for MiniLM
+- Hybrid RRF + extraction prompt = best overall across contains, F1, and faithfulness
+- BM25 alone is weaker than dense retrieval for semantic history questions, but helps in the hybrid
+
+---
+
+## File Structure
+
+```
+GenerativeAI_Project/
+├── config.py                        # all paths, model names, hyperparameters
+├── pipeline_utils.py                # shared embedding functions
+├── requirements.txt
+│
+├── data/
+│   ├── raw/                         # 15 source PDFs
+│   ├── processed/                   # extracted plain text
+│   ├── cleaned/                     # cleaned text
+│   ├── chunks/                      # chunked JSON (3 size configs)
+│   ├── embeddings/                  # MiniLM embeddings
+│   ├── embeddings_bge/              # BGE-large embeddings
+│   ├── questions.json               # 44 golden QA pairs
+│   └── retrieval_labels.json        # ground-truth source doc IDs per question
+│
+├── scripts/
+│   ├── prepare_data.py              # PDF → text
+│   ├── clean_processed_texts.py     # text cleaning
+│   ├── chunk_documents.py           # text → chunks
+│   ├── embed_chunks.py              # MiniLM embeddings
+│   ├── embed_chunks_bge.py          # BGE-large embeddings  [Stage 4]
+│   ├── retrieve.py                  # dense cosine retrieval (MiniLM)
+│   ├── retrieve_bge.py              # dense cosine retrieval (BGE) [Stage 4]
+│   ├── retrieve_bm25.py             # BM25 lexical retrieval        [Stage 4]
+│   ├── retrieve_hybrid.py           # Hybrid RRF (BGE + BM25)       [Stage 4]
+│   ├── run_baseline.py              # no-RAG baseline
+│   ├── run_rag.py                   # RAG generation (--filter, --prompt-style)
+│   ├── evaluate.py                  # baseline evaluation
+│   ├── evaluate_retrieval.py        # retrieval recall metrics       [Stage 4]
+│   ├── evaluate_rag.py              # RAG metrics + semantic sim     [Stage 4]
+│   ├── score_faithfulness.py        # faithfulness scoring
+│   └── visualization/
+│       ├── metrics_counter.py       # aggregate exact match report
+│       └── result_graphics.py       # matplotlib charts
+│
+└── results/
+    ├── baseline_outputs.json
+    ├── stage3_report.json
+    ├── retrieval/                   # all retrieval JSON files
+    ├── rag/                         # all RAG answer JSON files
+    └── reports/
+        ├── retrieval_report.json    # document_recall + answer_recall
+        ├── faithfulness_report.json # faithfulness scores
+        └── rag_evaluation_report.json # EM, F1, semantic similarity
+```

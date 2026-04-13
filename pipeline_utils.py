@@ -1,10 +1,10 @@
 import re
 
 import numpy as np
-from sklearn.feature_extraction.text import HashingVectorizer
 from sentence_transformers import SentenceTransformer
+from sklearn.feature_extraction.text import HashingVectorizer
 
-_semantic_model = None
+_semantic_models = {}
 
 WHITESPACE_PATTERN = re.compile(r"\s+")
 
@@ -31,11 +31,12 @@ def embed_texts_hashing(texts, dimension: int) -> np.ndarray:
     matrix = vectorizer.transform(normalized_texts)
     return matrix.toarray().astype(np.float32)
 
+
 def get_semantic_model(model_name="all-MiniLM-L6-v2"):
-    global _semantic_model
-    if _semantic_model is None:
-        _semantic_model = SentenceTransformer(model_name)
-    return _semantic_model
+    global _semantic_models
+    if model_name not in _semantic_models:
+        _semantic_models[model_name] = SentenceTransformer(model_name)
+    return _semantic_models[model_name]
 
 
 def embed_texts_semantic(texts, model_name="all-MiniLM-L6-v2"):

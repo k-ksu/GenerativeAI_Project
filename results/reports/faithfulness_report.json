@@ -1,4 +1,2531 @@
 {
+  "extraction_rag_bge_retrieval_size_200_overlap_40_k_5.json": {
+    "num_questions": 44,
+    "supported": 14,
+    "partially_supported": 5,
+    "unsupported": 25,
+    "faithfulness_score": 0.375,
+    "per_question": [
+      {
+        "question_id": "q_001",
+        "question": "What is the capital of France?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Paris",
+        "model_answer": "The context does not specify the capital of France, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_002",
+        "question": "What is the capital of Italy?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Rome",
+        "model_answer": "The context does not provide the capital of Italy, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_003",
+        "question": "When did World War II begin?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 0.3333,
+        "expected_answer": "1939",
+        "model_answer": "The context does not specify the date when World War II began, so the answer cannot be extracted from the context."
+      },
+      {
+        "question_id": "q_004",
+        "question": "Who was the first emperor of Rome?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Augustus",
+        "model_answer": "The passage does not specify who the first emperor of Rome was, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_005",
+        "question": "What year did the French Revolution start?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1789",
+        "model_answer": "The context does not specify the year in which the French Revolution started, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_006",
+        "question": "What are the four traditional periods of European history?",
+        "label": "supported",
+        "token_overlap_ratio": 0.8571,
+        "expected_answer": "Prehistoric Europe, classical antiquity, the Middle Ages, and the modern era",
+        "model_answer": "Sure, the four traditional periods of European history are:\n\n* Prehistoric Europe (prior to about 800 BC)\n* Classical antiquity (800 BC to AD 500)\n* The Middle Ages (AD 500–1500)\n* The modern era (since AD 1500)"
+      },
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 0.8,
+        "expected_answer": "476 AD",
+        "model_answer": "According to the context, the fall of the Western Roman Empire is traditionally dated to 395 by some scholars."
+      },
+      {
+        "question_id": "q_008",
+        "question": "Who was the Frankish king crowned as Roman Emperor in 800 AD?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Charlemagne",
+        "model_answer": "Charlemagne was the Frankish king crowned as Roman Emperor in 800 AD."
+      },
+      {
+        "question_id": "q_009",
+        "question": "What was the period of renewed interest in classical art and learning in Europe called?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Renaissance",
+        "model_answer": "The period of renewed interest in classical art and learning in Europe was called the Renaissance."
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 0.7368,
+        "expected_answer": "The publication of the 95 Theses by Martin Luther in 1517",
+        "model_answer": "The event traditionally considered the start of the Reformation is 1517 when Martin Luther nailed his 95 theses on the door of the church in Wittenberg, triggering discussions which would soon lead to the Reformation."
+      },
+      {
+        "question_id": "q_011",
+        "question": "Who was the leader of Nazi Germany during World War II?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Adolf Hitler",
+        "model_answer": "The answer is Adolf Hitler.\n\nThe context does not provide a name of the leader of Nazi Germany during World War II."
+      },
+      {
+        "question_id": "q_012",
+        "question": "What was the peace treaty that ended World War I?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Treaty of Versailles",
+        "model_answer": "The peace treaty that ended World War I was the Treaty of Versailles, signed in 1919 in Paris."
+      },
+      {
+        "question_id": "q_013",
+        "question": "In what year was the Berlin Wall torn down?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1989",
+        "model_answer": "The Berlin Wall was torn down in 1989.\n\nThe context does not specify the exact year in which the Berlin Wall was torn down, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_014",
+        "question": "Which ancient civilization built the palace at Knossos on Crete?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Minoan civilization",
+        "model_answer": "The Minoan civilization built the palace at Knossos on Crete. The context does not specify the name of the ancient civilization responsible for building the palace."
+      },
+      {
+        "question_id": "q_015",
+        "question": "At which battle in 732 did the Franks stop the Muslim advance into Europe?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Battle of Tours (or Battle of Poitiers)",
+        "model_answer": "The context does not mention the battle at which the Franks stopped the Muslim advance into Europe in 732, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_016",
+        "question": "What was the name of the pandemic that killed a huge part of Europe's population in the 14th century?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Black Death (or bubonic plague)",
+        "model_answer": "The name of the pandemic that killed a huge part of Europe's population in the 14th century is not explicitly mentioned in the context, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_017",
+        "question": "With which war is Joan of Arc associated?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Hundred Years' War",
+        "model_answer": "Joan of Arc is associated with the Hundred Years' War.\n\nThe context says that Joan of Arc led forces against the English during the Hundred Years' War."
+      },
+      {
+        "question_id": "q_018",
+        "question": "Who wrote the famous political treatise, 'The Prince'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Niccolò Machiavelli",
+        "model_answer": "The context does not provide the name of the author of the famous political treatise, 'The Prince'. So I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_019",
+        "question": "Which maritime republic was a major rival of Genoa and dominated trade in the Mediterranean?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Venice",
+        "model_answer": "The passage does not mention the name of a maritime republic that was a major rival of Genoa and dominated trade in the Mediterranean, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_020",
+        "question": "Which famous Florentine family were great patrons of the arts during the Renaissance?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Medici",
+        "model_answer": "Sure, the answer is the Medici family. \n\nThe context states that Lorenzo de' Medici was the catalyst for an enormous amount of arts patronage, encouraging his countrymen to commission works from the leading artists of Florence, including Leonardo da Vinci, Sandro Botticelli, and Michelangelo Buonarroti."
+      },
+      {
+        "question_id": "q_021",
+        "question": "Who was the leader of the 'Expedition of the Thousand' and a key figure in the unification of Italy?",
+        "label": "supported",
+        "token_overlap_ratio": 0.8,
+        "expected_answer": "Giuseppe Garibaldi",
+        "model_answer": "The leader of the 'Expedition of the Thousand' was Garibaldi, and a key figure in the unification of Italy was Giuseppe Mazzini."
+      },
+      {
+        "question_id": "q_022",
+        "question": "In what year did Italy become a republic?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "1946",
+        "model_answer": "In 1946, Italy officially became a republic."
+      },
+      {
+        "question_id": "q_023",
+        "question": "What was the name given by the Greeks to the Iberian Peninsula, after a river?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Iberia",
+        "model_answer": "The passage does not provide the name given by the Greeks to the Iberian Peninsula after a river, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_024",
+        "question": "What was the Muslim-ruled area on the Iberian Peninsula called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Al-Andalus",
+        "model_answer": "Al-Andalus.\n\nThe context does not specify the exact name of the Muslim-ruled area on the Iberian Peninsula, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_025",
+        "question": "In which year did Christopher Columbus first reach the Americas?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 0.6364,
+        "expected_answer": "1492",
+        "model_answer": "The passage does not specify the year in which Christopher Columbus first reached the Americas, so the answer cannot be found from the context."
+      },
+      {
+        "question_id": "q_026",
+        "question": "Which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Philip II",
+        "model_answer": "The context does not mention the name of any Spanish king who ruled during the country's 'Golden Age' and was married to Mary Tudor, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_027",
+        "question": "What were the military campaigns to reconquer the Iberian Peninsula from the Moors called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Reconquista",
+        "model_answer": "The context does not specify the name of any military campaigns to reconquer the Iberian Peninsula from the Moors, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_028",
+        "question": "Which French king is known as the 'Sun King'?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Louis XIV",
+        "model_answer": "The answer is Louis XIV of France.\n\nThe context specifies that Louis XIV was known as the 'Sun King'."
+      },
+      {
+        "question_id": "q_029",
+        "question": "In which year did the French Revolution begin?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1789",
+        "model_answer": "The context does not specify the year in which the French Revolution began, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_030",
+        "question": "Who was the famous French military leader and emperor who was finally defeated at Waterloo?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Napoleon Bonaparte",
+        "model_answer": "The context does not mention the name of a famous French military leader and emperor who was finally defeated at Waterloo. Therefore, I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Mona Lisa (or La Gioconda)",
+        "model_answer": "The name of the famous painting by Leonardo da Vinci, housed in the Louvre, is not explicitly mentioned in the context, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_032",
+        "question": "What invention by Johannes Gutenberg revolutionized the spread of knowledge?",
+        "label": "supported",
+        "token_overlap_ratio": 0.7692,
+        "expected_answer": "The printing press",
+        "model_answer": "The invention by Johannes Gutenberg revolutionized the spread of knowledge by allowing a faster propagation of more widely distributed ideas."
+      },
+      {
+        "question_id": "q_033",
+        "question": "To which artistic era did Michelangelo belong?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Renaissance",
+        "model_answer": "The context does not provide any information about Michelangelo, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_034",
+        "question": "Which artistic style, known for its drama and grandeur, followed the Renaissance?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Baroque",
+        "model_answer": "The passage does not specify an artistic style that followed the Renaissance, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_035",
+        "question": "Who is the sculptor of the famous statue of 'David'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Michelangelo",
+        "model_answer": "The context does not specify the sculptor of the famous statue of 'David', so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Arnolfini Portrait",
+        "model_answer": "The context does not mention the title of the famous 15th-century painting by Jan van Eyck depicting a couple, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_037",
+        "question": "Which non-Indo-European people inhabited north-western Italy before the rise of Rome?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Etruscans",
+        "model_answer": "The context does not mention the non-Indo-European people who inhabited north-western Italy before the rise of Rome, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_038",
+        "question": "According to legend, in what year was Rome founded?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "753 BC",
+        "model_answer": "According to legend, Rome was founded in 753 BC by twin brothers Romulus and Remus."
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Rome and Carthage",
+        "model_answer": "The Punic Wars were fought between Carthage and the Roman Republic."
+      },
+      {
+        "question_id": "q_040",
+        "question": "Whose translation of the Bible was key to the development of the modern Standard German language?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Martin Luther",
+        "model_answer": "The context does not specify whose translation of the Bible was key to the development of the modern Standard German language, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_041",
+        "question": "The kingdom of which Germanic tribe formed the basis for the state in modern-day France?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Franks",
+        "model_answer": "Not found. The context does not specify the kingdom of which Germanic tribe formed the basis for the state in modern-day France."
+      },
+      {
+        "question_id": "q_042",
+        "question": "What were the major military expeditions by European Christians to the Holy Land called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Crusades",
+        "model_answer": "The passage does not mention the major military expeditions by European Christians to the Holy Land called, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_043",
+        "question": "Which famous painting by Pablo Picasso depicts the horrors of the bombing of a town during the Spanish Civil War?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Guernica",
+        "model_answer": "The answer is \"Guernica\".\n\nThe painting depicts the horrors of the bombing of a town during the Spanish Civil War."
+      },
+      {
+        "question_id": "q_044",
+        "question": "What was the name of the political regime led by Benito Mussolini in Italy?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Fascism",
+        "model_answer": "The name of the political regime led by Benito Mussolini in Italy was the Fascist regime."
+      }
+    ]
+  },
+  "extraction_rag_bm25_retrieval_size_200_overlap_40_k_5.json": {
+    "num_questions": 44,
+    "supported": 12,
+    "partially_supported": 4,
+    "unsupported": 28,
+    "faithfulness_score": 0.3182,
+    "per_question": [
+      {
+        "question_id": "q_001",
+        "question": "What is the capital of France?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Paris",
+        "model_answer": "The context does not provide any information about the capital of France, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_002",
+        "question": "What is the capital of Italy?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Rome",
+        "model_answer": "The context does not provide any information about the capital of Italy, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_003",
+        "question": "When did World War II begin?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1939",
+        "model_answer": "The passage does not specify the date when World War II began, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_004",
+        "question": "Who was the first emperor of Rome?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Augustus",
+        "model_answer": "The context does not specify the name of the first emperor of Rome, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_005",
+        "question": "What year did the French Revolution start?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1789",
+        "model_answer": "The context does not provide the year in which the French Revolution started, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_006",
+        "question": "What are the four traditional periods of European history?",
+        "label": "supported",
+        "token_overlap_ratio": 0.9286,
+        "expected_answer": "Prehistoric Europe, classical antiquity, the Middle Ages, and the modern era",
+        "model_answer": "Sure, the four traditional periods of European history are: \n\n- Prehistoric Europe (prior to about 800 BC)\n- Classical antiquity (800 BC to AD 500)\n- The Middle Ages (AD 500–1500)\n- The modern era (since AD 1500)"
+      },
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "476 AD",
+        "model_answer": "The fall of the Western Roman Empire in AD 476 traditionally marks the start of the Middle Ages."
+      },
+      {
+        "question_id": "q_008",
+        "question": "Who was the Frankish king crowned as Roman Emperor in 800 AD?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Charlemagne",
+        "model_answer": "The context does not mention the name of the Frankish king crowned as Roman Emperor in 800 AD, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_009",
+        "question": "What was the period of renewed interest in classical art and learning in Europe called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Renaissance",
+        "model_answer": "The period of renewed interest in classical art and learning in Europe was called the Renaissance.\n\nNot found in the context."
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The publication of the 95 Theses by Martin Luther in 1517",
+        "model_answer": "The fall of the Western Roman Empire in AD 476 traditionally marks the start of the Middle Ages."
+      },
+      {
+        "question_id": "q_011",
+        "question": "Who was the leader of Nazi Germany during World War II?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Adolf Hitler",
+        "model_answer": "The context does not mention the leader of Nazi Germany during World War II, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_012",
+        "question": "What was the peace treaty that ended World War I?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Treaty of Versailles",
+        "model_answer": "The context does not mention the name of the peace treaty that ended World War I, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_013",
+        "question": "In what year was the Berlin Wall torn down?",
+        "label": "supported",
+        "token_overlap_ratio": 0.8571,
+        "expected_answer": "1989",
+        "model_answer": "27.02.2026</i>\n\nThe context describes the year in which the Berlin Wall came down."
+      },
+      {
+        "question_id": "q_014",
+        "question": "Which ancient civilization built the palace at Knossos on Crete?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Minoan civilization",
+        "model_answer": "The Minoan civilization built the palace at Knossos on Crete. The context describes the history of Crete and the Minoan civilization and mentions that Knossos was the center of the Minoan civilization."
+      },
+      {
+        "question_id": "q_015",
+        "question": "At which battle in 732 did the Franks stop the Muslim advance into Europe?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Battle of Tours (or Battle of Poitiers)",
+        "model_answer": "The answer is: The Battle of Tours in 732.\n\nThe context does not specify which battle in 732 the Franks stopped the Muslim advance into Europe, so the answer cannot be found in the context."
+      },
+      {
+        "question_id": "q_016",
+        "question": "What was the name of the pandemic that killed a huge part of Europe's population in the 14th century?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Black Death (or bubonic plague)",
+        "model_answer": "The name of the pandemic that killed a huge part of Europe's population in the 14th century is not explicitly mentioned in the context, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_017",
+        "question": "With which war is Joan of Arc associated?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Hundred Years' War",
+        "model_answer": "The context does not specify which war Joan of Arc is associated with, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_018",
+        "question": "Who wrote the famous political treatise, 'The Prince'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Niccolò Machiavelli",
+        "model_answer": "The context does not mention the name of the person who wrote the famous political treatise, 'The Prince'. Therefore, I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_019",
+        "question": "Which maritime republic was a major rival of Genoa and dominated trade in the Mediterranean?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Venice",
+        "model_answer": "The context does not specify the name of a maritime republic that was a major rival of Genoa and dominated trade in the Mediterranean, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_020",
+        "question": "Which famous Florentine family were great patrons of the arts during the Renaissance?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Medici",
+        "model_answer": "Sure, the answer is the Medici family.\n\nThe context says that Lorenzo de' Medici was the catalyst for an enormous amount of arts patronage, encouraging his countrymen to commission works from the leading artists of Florence, including Leonardo da Vinci, Sandro Botticelli, and Michelangelo Buonarroti."
+      },
+      {
+        "question_id": "q_021",
+        "question": "Who was the leader of the 'Expedition of the Thousand' and a key figure in the unification of Italy?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Giuseppe Garibaldi",
+        "model_answer": "The answer is Garibaldi. He was the leader of the \"Expedition of the Thousand\" and a key figure in the unification of Italy."
+      },
+      {
+        "question_id": "q_022",
+        "question": "In what year did Italy become a republic?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "1946",
+        "model_answer": "According to the context, Italy officially became a republic in 1946."
+      },
+      {
+        "question_id": "q_023",
+        "question": "What was the name given by the Greeks to the Iberian Peninsula, after a river?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Iberia",
+        "model_answer": "The name of the river that gave its name to the Iberian Peninsula is not mentioned in the context, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_024",
+        "question": "What was the Muslim-ruled area on the Iberian Peninsula called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Al-Andalus",
+        "model_answer": "The Muslim-ruled area on the Iberian Peninsula was called Al-Andalus.\n\nNot found in the context."
+      },
+      {
+        "question_id": "q_025",
+        "question": "In which year did Christopher Columbus first reach the Americas?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1492",
+        "model_answer": "The context does not specify in which year Christopher Columbus first reached the Americas, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_026",
+        "question": "Which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Philip II",
+        "model_answer": "The context does not mention the name of any Spanish king during the country's \"Golden Age\", nor does it mention who married Mary Tudor. Therefore, I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_027",
+        "question": "What were the military campaigns to reconquer the Iberian Peninsula from the Moors called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Reconquista",
+        "model_answer": "The text does not specify the name of the military campaigns to reconquer the Iberian Peninsula from the Moors, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_028",
+        "question": "Which French king is known as the 'Sun King'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Louis XIV",
+        "model_answer": "The answer is Louis XIV of France.\n\nThe context does not specify which French king is known as the \"Sun King\", so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_029",
+        "question": "In which year did the French Revolution begin?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1789",
+        "model_answer": "The context does not provide any information about the year in which the French Revolution began, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_030",
+        "question": "Who was the famous French military leader and emperor who was finally defeated at Waterloo?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Napoleon Bonaparte",
+        "model_answer": "The context does not mention the name of the famous French military leader and emperor who was finally defeated at Waterloo, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Mona Lisa (or La Gioconda)",
+        "model_answer": "The name of the famous painting by Leonardo da Vinci, housed in the Louvre, is the Mona Lisa."
+      },
+      {
+        "question_id": "q_032",
+        "question": "What invention by Johannes Gutenberg revolutionized the spread of knowledge?",
+        "label": "supported",
+        "token_overlap_ratio": 0.8462,
+        "expected_answer": "The printing press",
+        "model_answer": "The invention by Johannes Gutenberg revolutionized the spread of knowledge by allowing the rapid transmission of new ideas through books."
+      },
+      {
+        "question_id": "q_033",
+        "question": "To which artistic era did Michelangelo belong?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Renaissance",
+        "model_answer": "The context does not specify which artistic era Michelangelo belonged to, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_034",
+        "question": "Which artistic style, known for its drama and grandeur, followed the Renaissance?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Baroque",
+        "model_answer": "The Baroque style, known for its drama and grandeur, followed the Renaissance. The context says that Baroque art can be seen as a more elaborate and dramatic re-adaptation of late Renaissance art."
+      },
+      {
+        "question_id": "q_035",
+        "question": "Who is the sculptor of the famous statue of 'David'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Michelangelo",
+        "model_answer": "The context does not specify the sculptor of the famous statue of 'David', so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Arnolfini Portrait",
+        "model_answer": "The context does not provide the title of the famous 15th-century painting by Jan van Eyck depicting a couple, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_037",
+        "question": "Which non-Indo-European people inhabited north-western Italy before the rise of Rome?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Etruscans",
+        "model_answer": "The context does not mention which non-Indo-European people inhabited north-western Italy before the rise of Rome, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_038",
+        "question": "According to legend, in what year was Rome founded?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "753 BC",
+        "model_answer": "According to legend, Rome was founded in 753 BC by twin brothers Romulus and Remus."
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Rome and Carthage",
+        "model_answer": "The context does not specify which two powers fought in the Punic Wars, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_040",
+        "question": "Whose translation of the Bible was key to the development of the modern Standard German language?",
+        "label": "supported",
+        "token_overlap_ratio": 0.8889,
+        "expected_answer": "Martin Luther",
+        "model_answer": "Luther's translation of the Bible was key to the development of the modern Standard German language."
+      },
+      {
+        "question_id": "q_041",
+        "question": "The kingdom of which Germanic tribe formed the basis for the state in modern-day France?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Franks",
+        "model_answer": "The context does not provide the answer to the question, so I cannot extract the requested information from the context."
+      },
+      {
+        "question_id": "q_042",
+        "question": "What were the major military expeditions by European Christians to the Holy Land called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Crusades",
+        "model_answer": "The context does not mention what the major military expeditions by European Christians to the Holy Land were called, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_043",
+        "question": "Which famous painting by Pablo Picasso depicts the horrors of the bombing of a town during the Spanish Civil War?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Guernica",
+        "model_answer": "The answer is: Guernica.\n\nThe context describes a painting called Guernica by Pablo Picasso that depicts the horrors of the bombing of a town during the Spanish Civil War."
+      },
+      {
+        "question_id": "q_044",
+        "question": "What was the name of the political regime led by Benito Mussolini in Italy?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Fascism",
+        "model_answer": "The name of the political regime led by Benito Mussolini in Italy was the Fascist regime."
+      }
+    ]
+  },
+  "extraction_rag_hybrid_retrieval_size_200_overlap_40_k_5.json": {
+    "num_questions": 44,
+    "supported": 15,
+    "partially_supported": 4,
+    "unsupported": 25,
+    "faithfulness_score": 0.3864,
+    "per_question": [
+      {
+        "question_id": "q_001",
+        "question": "What is the capital of France?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Paris",
+        "model_answer": "The context does not specify the capital of France, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_002",
+        "question": "What is the capital of Italy?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Rome",
+        "model_answer": "The passage does not specify the capital of Italy, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_003",
+        "question": "When did World War II begin?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1939",
+        "model_answer": "The context does not mention when World War II began, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_004",
+        "question": "Who was the first emperor of Rome?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Augustus",
+        "model_answer": "The passage does not specify the name of the first emperor of Rome, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_005",
+        "question": "What year did the French Revolution start?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "1789",
+        "model_answer": "The French Revolution started in 1789. </start_of_turn>"
+      },
+      {
+        "question_id": "q_006",
+        "question": "What are the four traditional periods of European history?",
+        "label": "supported",
+        "token_overlap_ratio": 0.8571,
+        "expected_answer": "Prehistoric Europe, classical antiquity, the Middle Ages, and the modern era",
+        "model_answer": "Sure, the four traditional periods of European history are:\n\n- Prehistoric Europe (prior to about 800 BC)\n- Classical antiquity (800 BC to AD 500)\n- The Middle Ages (AD 500–1500)\n- The modern era (since AD 1500)"
+      },
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "476 AD",
+        "model_answer": "The fall of the Western Roman Empire is traditionally dated in AD 476."
+      },
+      {
+        "question_id": "q_008",
+        "question": "Who was the Frankish king crowned as Roman Emperor in 800 AD?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Charlemagne",
+        "model_answer": "The answer is Charlemagne.\n\nThe context says that Charlemagne was crowned Emperor of the Romans by Pope Leo III in 800 AD."
+      },
+      {
+        "question_id": "q_009",
+        "question": "What was the period of renewed interest in classical art and learning in Europe called?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Renaissance",
+        "model_answer": "The period of renewed interest in classical art and learning in Europe was called the Renaissance."
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 0.9,
+        "expected_answer": "The publication of the 95 Theses by Martin Luther in 1517",
+        "model_answer": "The event that is traditionally considered the start of the Reformation is the fall of the Western Roman Empire in AD 476."
+      },
+      {
+        "question_id": "q_011",
+        "question": "Who was the leader of Nazi Germany during World War II?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Adolf Hitler",
+        "model_answer": "The context does not mention the leader of Nazi Germany during World War II, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_012",
+        "question": "What was the peace treaty that ended World War I?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Treaty of Versailles",
+        "model_answer": "The peace treaty that ended World War I was not mentioned in the context, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_013",
+        "question": "In what year was the Berlin Wall torn down?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1989",
+        "model_answer": "The Berlin Wall was torn down in 1989.\n\nThe context does not specify the exact date of the event, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_014",
+        "question": "Which ancient civilization built the palace at Knossos on Crete?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Minoan civilization",
+        "model_answer": "The Minoan civilization built the palace at Knossos on Crete. The context does not provide any other information about the civilization that built the palace."
+      },
+      {
+        "question_id": "q_015",
+        "question": "At which battle in 732 did the Franks stop the Muslim advance into Europe?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Battle of Tours (or Battle of Poitiers)",
+        "model_answer": "The Franks stopped the Muslim advance into Europe at the Battle of Tours in 732."
+      },
+      {
+        "question_id": "q_016",
+        "question": "What was the name of the pandemic that killed a huge part of Europe's population in the 14th century?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Black Death (or bubonic plague)",
+        "model_answer": "The name of the pandemic that killed a huge part of Europe's population in the 14th century is not explicitly stated in the context, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_017",
+        "question": "With which war is Joan of Arc associated?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Hundred Years' War",
+        "model_answer": "Joan of Arc is associated with the Hundred Years' War.\n\nThe context says that Joan of Arc led forces against the English in the Hundred Years' War."
+      },
+      {
+        "question_id": "q_018",
+        "question": "Who wrote the famous political treatise, 'The Prince'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Niccolò Machiavelli",
+        "model_answer": "The context does not mention who wrote the famous political treatise, 'The Prince', so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_019",
+        "question": "Which maritime republic was a major rival of Genoa and dominated trade in the Mediterranean?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Venice",
+        "model_answer": "The passage does not specify the name of a major rival of Genoa, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_020",
+        "question": "Which famous Florentine family were great patrons of the arts during the Renaissance?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Medici",
+        "model_answer": "Sure, the answer is the Medici family. \n\nThe context says that Lorenzo de' Medici was the catalyst for an enormous amount of arts patronage, encouraging his countrymen to commission works from the leading artists of Florence, including Leonardo da Vinci, Sandro Botticelli, and Michelangelo Buonarroti."
+      },
+      {
+        "question_id": "q_021",
+        "question": "Who was the leader of the 'Expedition of the Thousand' and a key figure in the unification of Italy?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Giuseppe Garibaldi",
+        "model_answer": "The context does not provide the name of the leader of the \"Expedition of the Thousand\" or a key figure in the unification of Italy, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_022",
+        "question": "In what year did Italy become a republic?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "1946",
+        "model_answer": "Answer: 1946\n\nThe context says that Italy officially became a republic on 2 June 1946."
+      },
+      {
+        "question_id": "q_023",
+        "question": "What was the name given by the Greeks to the Iberian Peninsula, after a river?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Iberia",
+        "model_answer": "The answer is not found in the context, so the question cannot be answered."
+      },
+      {
+        "question_id": "q_024",
+        "question": "What was the Muslim-ruled area on the Iberian Peninsula called?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Al-Andalus",
+        "model_answer": "Al-Andalus.\n\nThe context describes the Muslim-ruled area on the Iberian Peninsula as Al-Andalus."
+      },
+      {
+        "question_id": "q_025",
+        "question": "In which year did Christopher Columbus first reach the Americas?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1492",
+        "model_answer": "The context does not specify in which year Christopher Columbus first reached the Americas, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_026",
+        "question": "Which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Philip II",
+        "model_answer": "The context does not provide any information about which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_027",
+        "question": "What were the military campaigns to reconquer the Iberian Peninsula from the Moors called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Reconquista",
+        "model_answer": "The text does not specify the name of the military campaigns to reconquer the Iberian Peninsula from the Moors, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_028",
+        "question": "Which French king is known as the 'Sun King'?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Louis XIV",
+        "model_answer": "The answer is Louis XIV of France.\n\nThe context describes him as the \"Sun King\", based on the title provided."
+      },
+      {
+        "question_id": "q_029",
+        "question": "In which year did the French Revolution begin?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1789",
+        "model_answer": "The context does not specify the year in which the French Revolution began, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_030",
+        "question": "Who was the famous French military leader and emperor who was finally defeated at Waterloo?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Napoleon Bonaparte",
+        "model_answer": "The answer is not provided in the context, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 0.875,
+        "expected_answer": "The Mona Lisa (or La Gioconda)",
+        "model_answer": "The name of the famous painting by Leonardo da Vinci, housed in the Louvre, is the Mona Lisa."
+      },
+      {
+        "question_id": "q_032",
+        "question": "What invention by Johannes Gutenberg revolutionized the spread of knowledge?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The printing press",
+        "model_answer": "The answer is \"the printing press\".\n\nThe passage describes how Johannes Gutenberg invented the printing press, which revolutionized the spread of knowledge by allowing ideas to be transmitted more quickly and widely."
+      },
+      {
+        "question_id": "q_033",
+        "question": "To which artistic era did Michelangelo belong?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Renaissance",
+        "model_answer": "The context does not mention to which artistic era Michelangelo belonged, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_034",
+        "question": "Which artistic style, known for its drama and grandeur, followed the Renaissance?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Baroque",
+        "model_answer": "The context does not provide the answer to this question, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_035",
+        "question": "Who is the sculptor of the famous statue of 'David'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Michelangelo",
+        "model_answer": "The context does not mention the sculptor of the famous statue of 'David', so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Arnolfini Portrait",
+        "model_answer": "The context does not provide the title of the famous 15th-century painting by Jan van Eyck depicting a couple."
+      },
+      {
+        "question_id": "q_037",
+        "question": "Which non-Indo-European people inhabited north-western Italy before the rise of Rome?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Etruscans",
+        "model_answer": "The context does not provide the exact answer to the question, so I cannot extract the requested information from the context."
+      },
+      {
+        "question_id": "q_038",
+        "question": "According to legend, in what year was Rome founded?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "753 BC",
+        "model_answer": "According to legend, Rome was founded in 753 BC by twin brothers Romulus and Remus."
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 0.8889,
+        "expected_answer": "Rome and Carthage",
+        "model_answer": "Sure, the two powers who fought in the Punic Wars were Carthage and the Roman Republic."
+      },
+      {
+        "question_id": "q_040",
+        "question": "Whose translation of the Bible was key to the development of the modern Standard German language?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Martin Luther",
+        "model_answer": "The answer is Martin Luther.\n\nThe passage says that the Protestant reformer Martin Luther translated the Bible into High German in 1534."
+      },
+      {
+        "question_id": "q_041",
+        "question": "The kingdom of which Germanic tribe formed the basis for the state in modern-day France?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Franks",
+        "model_answer": "The context does not provide the information required to answer this question, so the answer is not found."
+      },
+      {
+        "question_id": "q_042",
+        "question": "What were the major military expeditions by European Christians to the Holy Land called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Crusades",
+        "model_answer": "The passage does not specify the major military expeditions by European Christians to the Holy Land, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_043",
+        "question": "Which famous painting by Pablo Picasso depicts the horrors of the bombing of a town during the Spanish Civil War?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Guernica",
+        "model_answer": "The answer is Guernica, a mural painted by Pablo Picasso in protest of the bombing."
+      },
+      {
+        "question_id": "q_044",
+        "question": "What was the name of the political regime led by Benito Mussolini in Italy?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Fascism",
+        "model_answer": "The name of the political regime led by Benito Mussolini in Italy was the Fascist Party."
+      }
+    ]
+  },
+  "extraction_rag_retrieval_size_200_overlap_40_k_5.json": {
+    "num_questions": 44,
+    "supported": 12,
+    "partially_supported": 4,
+    "unsupported": 28,
+    "faithfulness_score": 0.3182,
+    "per_question": [
+      {
+        "question_id": "q_001",
+        "question": "What is the capital of France?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Paris",
+        "model_answer": "The context does not provide the capital of France, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_002",
+        "question": "What is the capital of Italy?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Rome",
+        "model_answer": "The context does not specify the capital of Italy, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_003",
+        "question": "When did World War II begin?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1939",
+        "model_answer": "The context does not specify when World War II began, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_004",
+        "question": "Who was the first emperor of Rome?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Augustus",
+        "model_answer": "The context does not specify the name of the first emperor of Rome, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_005",
+        "question": "What year did the French Revolution start?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1789",
+        "model_answer": "The French Revolution started in May 1789.\n\nNot found in the context."
+      },
+      {
+        "question_id": "q_006",
+        "question": "What are the four traditional periods of European history?",
+        "label": "supported",
+        "token_overlap_ratio": 0.8,
+        "expected_answer": "Prehistoric Europe, classical antiquity, the Middle Ages, and the modern era",
+        "model_answer": "Sure, here's the answer to the question:\n\nThe four traditional periods of European history are:\n\n- Prehistoric Europe (prior to about 800 BC)\n- Classical antiquity (800 BC to AD 500)\n- The Middle Ages (AD 500–1500)\n- The modern era (since AD 1500)"
+      },
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "476 AD",
+        "model_answer": "The fall of the Western Roman Empire in AD 476 traditionally marks the start of the Middle Ages."
+      },
+      {
+        "question_id": "q_008",
+        "question": "Who was the Frankish king crowned as Roman Emperor in 800 AD?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Charlemagne",
+        "model_answer": "The context does not mention the name of the Frankish king crowned as Roman Emperor in 800 AD, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_009",
+        "question": "What was the period of renewed interest in classical art and learning in Europe called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Renaissance",
+        "model_answer": "The period of renewed interest in classical art and learning in Europe was called the Renaissance.\n\nNot found in the context."
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 0.5833,
+        "expected_answer": "The publication of the 95 Theses by Martin Luther in 1517",
+        "model_answer": "The event that is traditionally considered the start of the Reformation was the publication of The Ninety-Five Theses by Martin Luther in 1517."
+      },
+      {
+        "question_id": "q_011",
+        "question": "Who was the leader of Nazi Germany during World War II?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Adolf Hitler",
+        "model_answer": "The context does not provide the name of the leader of Nazi Germany during World War II, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_012",
+        "question": "What was the peace treaty that ended World War I?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Treaty of Versailles",
+        "model_answer": "The context does not specify the name of the peace treaty that ended World War I, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_013",
+        "question": "In what year was the Berlin Wall torn down?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "1989",
+        "model_answer": "The answer is 1989.\n\nThe context describes the fall of the Berlin Wall in 1989."
+      },
+      {
+        "question_id": "q_014",
+        "question": "Which ancient civilization built the palace at Knossos on Crete?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Minoan civilization",
+        "model_answer": "The context does not specify which ancient civilization built the palace at Knossos on Crete, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_015",
+        "question": "At which battle in 732 did the Franks stop the Muslim advance into Europe?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Battle of Tours (or Battle of Poitiers)",
+        "model_answer": "The Franks stopped the Muslim advance into Europe at the Battle of Tours in 732."
+      },
+      {
+        "question_id": "q_016",
+        "question": "What was the name of the pandemic that killed a huge part of Europe's population in the 14th century?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Black Death (or bubonic plague)",
+        "model_answer": "The name of the pandemic that killed a huge part of Europe's population in the 14th century is not explicitly stated in the context, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_017",
+        "question": "With which war is Joan of Arc associated?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Hundred Years' War",
+        "model_answer": "Joan of Arc is associated with the Hundred Years' War between the House of Valois and the House of Plantagenet."
+      },
+      {
+        "question_id": "q_018",
+        "question": "Who wrote the famous political treatise, 'The Prince'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Niccolò Machiavelli",
+        "model_answer": "The context does not mention who wrote the famous political treatise, 'The Prince', so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_019",
+        "question": "Which maritime republic was a major rival of Genoa and dominated trade in the Mediterranean?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Venice",
+        "model_answer": "The context does not provide the name of a major rival of Genoa, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_020",
+        "question": "Which famous Florentine family were great patrons of the arts during the Renaissance?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Medici",
+        "model_answer": "Sure, the answer is the Medici family. \n\nThe context states that Lorenzo de' Medici was the catalyst for an enormous amount of arts patronage, encouraging his countrymen to commission works from the leading artists of Florence, including Leonardo da Vinci, Sandro Botticelli, and Michelangelo Buonarroti."
+      },
+      {
+        "question_id": "q_021",
+        "question": "Who was the leader of the 'Expedition of the Thousand' and a key figure in the unification of Italy?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Giuseppe Garibaldi",
+        "model_answer": "The context does not specify the leader of the 'Expedition of the Thousand' or a key figure in the unification of Italy, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_022",
+        "question": "In what year did Italy become a republic?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "1946",
+        "model_answer": "According to the context, Italy officially became a republic in 1946, as 54% of the vote was won by the republican side."
+      },
+      {
+        "question_id": "q_023",
+        "question": "What was the name given by the Greeks to the Iberian Peninsula, after a river?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Iberia",
+        "model_answer": "The context does not mention the name given by the Greeks to the Iberian Peninsula, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_024",
+        "question": "What was the Muslim-ruled area on the Iberian Peninsula called?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Al-Andalus",
+        "model_answer": "Al-Andalus.\n\nThe context specifies that the region under the Arab name Al-Andalus became part of the expanding Umayyad empire."
+      },
+      {
+        "question_id": "q_025",
+        "question": "In which year did Christopher Columbus first reach the Americas?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1492",
+        "model_answer": "The context does not specify the year in which Christopher Columbus first reached the Americas, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_026",
+        "question": "Which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Philip II",
+        "model_answer": "The context does not mention the name of any Spanish king who ruled during the country's 'Golden Age' or was married to Mary Tudor, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_027",
+        "question": "What were the military campaigns to reconquer the Iberian Peninsula from the Moors called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Reconquista",
+        "model_answer": "The context does not specify the name of the military campaigns to reconquer the Iberian Peninsula from the Moors, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_028",
+        "question": "Which French king is known as the 'Sun King'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Louis XIV",
+        "model_answer": "The context does not specify the name of any French king known as the 'Sun King', so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_029",
+        "question": "In which year did the French Revolution begin?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1789",
+        "model_answer": "The French Revolution began in 1789.\n\nNot found in the context."
+      },
+      {
+        "question_id": "q_030",
+        "question": "Who was the famous French military leader and emperor who was finally defeated at Waterloo?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Napoleon Bonaparte",
+        "model_answer": "The context does not provide the name of the famous French military leader and emperor who was finally defeated at Waterloo, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 0.875,
+        "expected_answer": "The Mona Lisa (or La Gioconda)",
+        "model_answer": "The name of the famous painting by Leonardo da Vinci, housed in the Louvre, is the Mona Lisa."
+      },
+      {
+        "question_id": "q_032",
+        "question": "What invention by Johannes Gutenberg revolutionized the spread of knowledge?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The printing press",
+        "model_answer": "The invention of the printing press by German printer Johannes Gutenberg revolutionized the spread of knowledge. The printing press allowed for the rapid transmission of ideas, leading to a significant shift in the Renaissance period."
+      },
+      {
+        "question_id": "q_033",
+        "question": "To which artistic era did Michelangelo belong?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Renaissance",
+        "model_answer": "The context does not provide information about the artistic era to which Michelangelo belonged, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_034",
+        "question": "Which artistic style, known for its drama and grandeur, followed the Renaissance?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Baroque",
+        "model_answer": "The Baroque art style followed the Renaissance in the 18th century. The term was initially used in a derogatory manner to describe post-Renaissance art and architecture which was over-elaborate. Baroque art can be seen as a more elaborate and dramatic re-adaptation of late Renaissance art."
+      },
+      {
+        "question_id": "q_035",
+        "question": "Who is the sculptor of the famous statue of 'David'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Michelangelo",
+        "model_answer": "The context does not provide the name of the sculptor of the famous statue of 'David'. Therefore, I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Arnolfini Portrait",
+        "model_answer": "The context does not provide the title of the famous 15th-century painting by Jan van Eyck depicting a couple, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_037",
+        "question": "Which non-Indo-European people inhabited north-western Italy before the rise of Rome?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Etruscans",
+        "model_answer": "The context does not specify which non-Indo-European people inhabited north-western Italy before the rise of Rome, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_038",
+        "question": "According to legend, in what year was Rome founded?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "753 BC",
+        "model_answer": "According to legend, Rome was founded in 753 BC by twin brothers Romulus and Remus."
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 0.6429,
+        "expected_answer": "Rome and Carthage",
+        "model_answer": "The Punic Wars were fought between Carthage and Rome. \n\nThe context does not specify which two powers fought in the Punic Wars."
+      },
+      {
+        "question_id": "q_040",
+        "question": "Whose translation of the Bible was key to the development of the modern Standard German language?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Martin Luther",
+        "model_answer": "The passage does not specify whose translation of the Bible was key to the development of the modern Standard German language, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_041",
+        "question": "The kingdom of which Germanic tribe formed the basis for the state in modern-day France?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Franks",
+        "model_answer": "The context does not provide the name of any Germanic tribe, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_042",
+        "question": "What were the major military expeditions by European Christians to the Holy Land called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Crusades",
+        "model_answer": "The passage does not provide specific information about major military expeditions by European Christians to the Holy Land, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_043",
+        "question": "Which famous painting by Pablo Picasso depicts the horrors of the bombing of a town during the Spanish Civil War?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Guernica",
+        "model_answer": "Answer: Guernica.\n\nThe painting depicts the horrors of the bombing of a town during the Spanish Civil War."
+      },
+      {
+        "question_id": "q_044",
+        "question": "What was the name of the political regime led by Benito Mussolini in Italy?",
+        "label": "supported",
+        "token_overlap_ratio": 0.875,
+        "expected_answer": "Fascism",
+        "model_answer": "The name of the political regime led by Benito Mussolini in Italy was the Fascist Party."
+      }
+    ]
+  },
+  "rag_bge_retrieval_size_200_overlap_40_k_5.json": {
+    "num_questions": 44,
+    "supported": 10,
+    "partially_supported": 3,
+    "unsupported": 31,
+    "faithfulness_score": 0.2614,
+    "per_question": [
+      {
+        "question_id": "q_001",
+        "question": "What is the capital of France?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Paris",
+        "model_answer": "The context does not specify the capital of France, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_002",
+        "question": "What is the capital of Italy?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Rome",
+        "model_answer": "The context does not provide the capital of Italy, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_003",
+        "question": "When did World War II begin?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1939",
+        "model_answer": "The context does not specify when World War II began, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_004",
+        "question": "Who was the first emperor of Rome?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Augustus",
+        "model_answer": "The context does not specify the name of the first emperor of Rome, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_005",
+        "question": "What year did the French Revolution start?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1789",
+        "model_answer": "The context does not provide information about the year in which the French Revolution started, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_006",
+        "question": "What are the four traditional periods of European history?",
+        "label": "supported",
+        "token_overlap_ratio": 0.8571,
+        "expected_answer": "Prehistoric Europe, classical antiquity, the Middle Ages, and the modern era",
+        "model_answer": "Sure, the four traditional periods of European history are:\n\n1. Prehistoric Europe (prior to about 800 BC)\n2. Classical antiquity (800 BC to AD 500)\n3. The Middle Ages (AD 500–1500)\n4. Modern era (since AD 1500)"
+      },
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 0.875,
+        "expected_answer": "476 AD",
+        "model_answer": "The fall of the Western Roman Empire is traditionally dated in 476 according to the context."
+      },
+      {
+        "question_id": "q_008",
+        "question": "Who was the Frankish king crowned as Roman Emperor in 800 AD?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Charlemagne",
+        "model_answer": "The context does not mention who the Frankish king crowned as Roman Emperor in 800 AD, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_009",
+        "question": "What was the period of renewed interest in classical art and learning in Europe called?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Renaissance",
+        "model_answer": "The period of renewed interest in classical art and learning in Europe was called the Renaissance.\n\n"
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 0.8889,
+        "expected_answer": "The publication of the 95 Theses by Martin Luther in 1517",
+        "model_answer": "According to the context, the Protestant Reformation began in 1517 when Martin Luther nailed his 95 theses on the door of the church in Wittenberg, triggering discussions which would soon lead to the Reformation."
+      },
+      {
+        "question_id": "q_011",
+        "question": "Who was the leader of Nazi Germany during World War II?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Adolf Hitler",
+        "model_answer": "The context does not provide the name of the leader of Nazi Germany during World War II, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_012",
+        "question": "What was the peace treaty that ended World War I?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Treaty of Versailles",
+        "model_answer": "The peace treaty that ended World War I is not mentioned in the context, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_013",
+        "question": "In what year was the Berlin Wall torn down?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "1989",
+        "model_answer": "The context says that the Berlin Wall came down in 1989.\n\nAnswer: 1989"
+      },
+      {
+        "question_id": "q_014",
+        "question": "Which ancient civilization built the palace at Knossos on Crete?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Minoan civilization",
+        "model_answer": "The context does not mention which ancient civilization built the palace at Knossos on Crete, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_015",
+        "question": "At which battle in 732 did the Franks stop the Muslim advance into Europe?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Battle of Tours (or Battle of Poitiers)",
+        "model_answer": "The context does not mention which battle in 732 stopped the Muslim advance into Europe, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_016",
+        "question": "What was the name of the pandemic that killed a huge part of Europe's population in the 14th century?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Black Death (or bubonic plague)",
+        "model_answer": "The name of the pandemic that killed a huge part of Europe's population in the 14th century was not explicitly mentioned in the context, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_017",
+        "question": "With which war is Joan of Arc associated?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Hundred Years' War",
+        "model_answer": "Joan of Arc is associated with the Hundred Years' War between the House of Valois and the House of Plantagenet."
+      },
+      {
+        "question_id": "q_018",
+        "question": "Who wrote the famous political treatise, 'The Prince'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Niccolò Machiavelli",
+        "model_answer": "The context does not mention the author of the famous political treatise, 'The Prince', so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_019",
+        "question": "Which maritime republic was a major rival of Genoa and dominated trade in the Mediterranean?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Venice",
+        "model_answer": "The passage does not provide information about which maritime republic was a major rival of Genoa and dominated trade in the Mediterranean, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_020",
+        "question": "Which famous Florentine family were great patrons of the arts during the Renaissance?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Medici",
+        "model_answer": "According to the context, the Medici family was a prominent Florentine family that played a significant role in patronizing and stimulating the arts during the Renaissance."
+      },
+      {
+        "question_id": "q_021",
+        "question": "Who was the leader of the 'Expedition of the Thousand' and a key figure in the unification of Italy?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Giuseppe Garibaldi",
+        "model_answer": "The context does not provide the name of the leader of the \"Expedition of the Thousand\" or a key figure in the unification of Italy, so I cannot answer this question from the context."
+      },
+      {
+        "question_id": "q_022",
+        "question": "In what year did Italy become a republic?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "1946",
+        "model_answer": "According to the context, Italy officially became a republic on June 2, 1946."
+      },
+      {
+        "question_id": "q_023",
+        "question": "What was the name given by the Greeks to the Iberian Peninsula, after a river?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Iberia",
+        "model_answer": "The passage does not mention the name given by the Greeks to the Iberian Peninsula, after a river, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_024",
+        "question": "What was the Muslim-ruled area on the Iberian Peninsula called?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Al-Andalus",
+        "model_answer": "The Muslim-ruled area on the Iberian Peninsula was called Al-Andalus."
+      },
+      {
+        "question_id": "q_025",
+        "question": "In which year did Christopher Columbus first reach the Americas?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1492",
+        "model_answer": "The context does not specify in which year Christopher Columbus first reached the Americas, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_026",
+        "question": "Which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Philip II",
+        "model_answer": "The context does not mention which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_027",
+        "question": "What were the military campaigns to reconquer the Iberian Peninsula from the Moors called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Reconquista",
+        "model_answer": "The context does not specify the name of the military campaigns to reconquer the Iberian Peninsula from the Moors, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_028",
+        "question": "Which French king is known as the 'Sun King'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Louis XIV",
+        "model_answer": "The context does not specify which French king is known as the 'Sun King', so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_029",
+        "question": "In which year did the French Revolution begin?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1789",
+        "model_answer": "The context does not mention in which year the French Revolution began, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_030",
+        "question": "Who was the famous French military leader and emperor who was finally defeated at Waterloo?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Napoleon Bonaparte",
+        "model_answer": "The context does not mention who the famous French military leader and emperor who was finally defeated at Waterloo was, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Mona Lisa (or La Gioconda)",
+        "model_answer": "The context does not mention the name of the famous painting by Leonardo da Vinci housed in the Louvre, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_032",
+        "question": "What invention by Johannes Gutenberg revolutionized the spread of knowledge?",
+        "label": "supported",
+        "token_overlap_ratio": 0.7692,
+        "expected_answer": "The printing press",
+        "model_answer": "The invention by Johannes Gutenberg revolutionized the spread of knowledge by allowing a faster propagation of more widely distributed ideas."
+      },
+      {
+        "question_id": "q_033",
+        "question": "To which artistic era did Michelangelo belong?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Renaissance",
+        "model_answer": "The context does not specify to which artistic era Michelangelo belonged, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_034",
+        "question": "Which artistic style, known for its drama and grandeur, followed the Renaissance?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Baroque",
+        "model_answer": "The context does not mention which artistic style followed the Renaissance, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_035",
+        "question": "Who is the sculptor of the famous statue of 'David'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Michelangelo",
+        "model_answer": "The context does not provide information about the sculptor of the famous statue of 'David', so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Arnolfini Portrait",
+        "model_answer": "The context does not provide the title of the famous 15th-century painting by Jan van Eyck depicting a couple, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_037",
+        "question": "Which non-Indo-European people inhabited north-western Italy before the rise of Rome?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Etruscans",
+        "model_answer": "The context does not mention which non-Indo-European people inhabited north-western Italy before the rise of Rome, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_038",
+        "question": "According to legend, in what year was Rome founded?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "753 BC",
+        "model_answer": "According to legend, Rome was founded in 753 BC by twin brothers Romulus and Remus."
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Rome and Carthage",
+        "model_answer": "The Punic Wars were fought between Carthage and the Roman Republic."
+      },
+      {
+        "question_id": "q_040",
+        "question": "Whose translation of the Bible was key to the development of the modern Standard German language?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Martin Luther",
+        "model_answer": "The context does not specify whose translation of the Bible was key to the development of the modern Standard German language, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_041",
+        "question": "The kingdom of which Germanic tribe formed the basis for the state in modern-day France?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Franks",
+        "model_answer": "The context does not provide information about the kingdom of which Germanic tribe formed the basis for the state in modern-day France, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_042",
+        "question": "What were the major military expeditions by European Christians to the Holy Land called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Crusades",
+        "model_answer": "The context does not provide any information about the major military expeditions by European Christians to the Holy Land, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_043",
+        "question": "Which famous painting by Pablo Picasso depicts the horrors of the bombing of a town during the Spanish Civil War?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Guernica",
+        "model_answer": "Sure, the famous painting by Pablo Picasso that depicts the horrors of the bombing of a town during the Spanish Civil War is Guernica."
+      },
+      {
+        "question_id": "q_044",
+        "question": "What was the name of the political regime led by Benito Mussolini in Italy?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Fascism",
+        "model_answer": "The name of the political regime led by Benito Mussolini in Italy is not explicitly mentioned in the context, so I cannot answer this question from the provided context."
+      }
+    ]
+  },
+  "rag_bm25_retrieval_size_200_overlap_40_k_5.json": {
+    "num_questions": 44,
+    "supported": 8,
+    "partially_supported": 2,
+    "unsupported": 34,
+    "faithfulness_score": 0.2045,
+    "per_question": [
+      {
+        "question_id": "q_001",
+        "question": "What is the capital of France?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Paris",
+        "model_answer": "The context does not mention the capital of France, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_002",
+        "question": "What is the capital of Italy?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Rome",
+        "model_answer": "The context does not provide information about the capital of Italy, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_003",
+        "question": "When did World War II begin?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1939",
+        "model_answer": "The context does not specify when World War II began, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_004",
+        "question": "Who was the first emperor of Rome?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Augustus",
+        "model_answer": "The context does not specify who the first emperor of Rome was, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_005",
+        "question": "What year did the French Revolution start?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1789",
+        "model_answer": "The context does not provide the year in which the French Revolution started, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_006",
+        "question": "What are the four traditional periods of European history?",
+        "label": "supported",
+        "token_overlap_ratio": 0.8667,
+        "expected_answer": "Prehistoric Europe, classical antiquity, the Middle Ages, and the modern era",
+        "model_answer": "Sure, here's the answer:\n\nThe four traditional periods of European history are:\n\n- Prehistoric Europe (prior to about 800 BC)\n- Classical antiquity (800 BC to AD 500)\n- The Middle Ages (AD 500–1500)\n- The modern era (since AD 1500)"
+      },
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "476 AD",
+        "model_answer": "The fall of the Western Roman Empire in AD 476 traditionally marks the start of the Middle Ages."
+      },
+      {
+        "question_id": "q_008",
+        "question": "Who was the Frankish king crowned as Roman Emperor in 800 AD?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Charlemagne",
+        "model_answer": "The passage does not specify who was the Frankish king crowned as Roman Emperor in 800 AD, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_009",
+        "question": "What was the period of renewed interest in classical art and learning in Europe called?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Renaissance",
+        "model_answer": "The period of renewed interest in classical art and learning in Europe was called the Renaissance. \n\nThe context does not specify the name of this period, so the answer cannot be found in the context."
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The publication of the 95 Theses by Martin Luther in 1517",
+        "model_answer": "The passage does not mention what event is traditionally considered the start of the Reformation, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_011",
+        "question": "Who was the leader of Nazi Germany during World War II?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Adolf Hitler",
+        "model_answer": "The context does not specify the leader of Nazi Germany during World War II, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_012",
+        "question": "What was the peace treaty that ended World War I?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Treaty of Versailles",
+        "model_answer": "The context does not provide information about the peace treaty that ended World War I, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_013",
+        "question": "In what year was the Berlin Wall torn down?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "1989",
+        "model_answer": "According to the context, the Berlin Wall was torn down in 1989."
+      },
+      {
+        "question_id": "q_014",
+        "question": "Which ancient civilization built the palace at Knossos on Crete?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Minoan civilization",
+        "model_answer": "The context does not provide information about which ancient civilization built the palace at Knossos on Crete, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_015",
+        "question": "At which battle in 732 did the Franks stop the Muslim advance into Europe?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Battle of Tours (or Battle of Poitiers)",
+        "model_answer": "The passage does not specify which battle in 732 the Franks stopped the Muslim advance into Europe. Therefore, I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_016",
+        "question": "What was the name of the pandemic that killed a huge part of Europe's population in the 14th century?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Black Death (or bubonic plague)",
+        "model_answer": "The name of the pandemic that killed a huge part of Europe's population in the 14th century is not explicitly mentioned in the context, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_017",
+        "question": "With which war is Joan of Arc associated?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Hundred Years' War",
+        "model_answer": "The context does not mention which war Joan of Arc is associated with, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_018",
+        "question": "Who wrote the famous political treatise, 'The Prince'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Niccolò Machiavelli",
+        "model_answer": "The context does not mention who wrote the famous political treatise, 'The Prince', so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_019",
+        "question": "Which maritime republic was a major rival of Genoa and dominated trade in the Mediterranean?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Venice",
+        "model_answer": "The context does not mention which maritime republic was a major rival of Genoa and dominated trade in the Mediterranean, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_020",
+        "question": "Which famous Florentine family were great patrons of the arts during the Renaissance?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Medici",
+        "model_answer": "The Medici family were great patrons of the arts during the Renaissance. They were a banking family and later ducal ruling house in Florence."
+      },
+      {
+        "question_id": "q_021",
+        "question": "Who was the leader of the 'Expedition of the Thousand' and a key figure in the unification of Italy?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Giuseppe Garibaldi",
+        "model_answer": "The context does not specify the leader of the 'Expedition of the Thousand' or a key figure in the unification of Italy, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_022",
+        "question": "In what year did Italy become a republic?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "1946",
+        "model_answer": "The passage says that Italy officially became a republic on 2 June 1946, when the republican side won 54% of the vote in the Italian institutional referendum."
+      },
+      {
+        "question_id": "q_023",
+        "question": "What was the name given by the Greeks to the Iberian Peninsula, after a river?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Iberia",
+        "model_answer": "The context does not mention the name given by the Greeks to the Iberian Peninsula, after a river, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_024",
+        "question": "What was the Muslim-ruled area on the Iberian Peninsula called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Al-Andalus",
+        "model_answer": "The Muslim-ruled area on the Iberian Peninsula was called Al-Andalus. \n\nThe context does not specify the name of this area, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_025",
+        "question": "In which year did Christopher Columbus first reach the Americas?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1492",
+        "model_answer": "The context does not mention the year in which Christopher Columbus first reached the Americas, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_026",
+        "question": "Which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Philip II",
+        "model_answer": "The context does not provide the name of a Spanish king who ruled during the country's 'Golden Age' and was married to Mary Tudor, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_027",
+        "question": "What were the military campaigns to reconquer the Iberian Peninsula from the Moors called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Reconquista",
+        "model_answer": "The context does not provide information about what military campaigns were used to reconquer the Iberian Peninsula from the Moors, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_028",
+        "question": "Which French king is known as the 'Sun King'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Louis XIV",
+        "model_answer": "The context does not mention which French king is known as the 'Sun King', so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_029",
+        "question": "In which year did the French Revolution begin?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1789",
+        "model_answer": "The context does not mention the year in which the French Revolution began, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_030",
+        "question": "Who was the famous French military leader and emperor who was finally defeated at Waterloo?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Napoleon Bonaparte",
+        "model_answer": "The context does not mention the famous French military leader and emperor who was finally defeated at Waterloo, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Mona Lisa (or La Gioconda)",
+        "model_answer": "The name of the famous painting by Leonardo da Vinci, housed in the Louvre, is not provided in the context."
+      },
+      {
+        "question_id": "q_032",
+        "question": "What invention by Johannes Gutenberg revolutionized the spread of knowledge?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The printing press",
+        "model_answer": "The passage does not mention what invention by Johannes Gutenberg revolutionized the spread of knowledge, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_033",
+        "question": "To which artistic era did Michelangelo belong?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Renaissance",
+        "model_answer": "The context does not provide information about the artistic era to which Michelangelo belonged, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_034",
+        "question": "Which artistic style, known for its drama and grandeur, followed the Renaissance?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Baroque",
+        "model_answer": "The Baroque style followed the Renaissance in European art, known for its drama and grandeur, and emphasized detail, movement, lighting, and drama in their search for beauty."
+      },
+      {
+        "question_id": "q_035",
+        "question": "Who is the sculptor of the famous statue of 'David'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Michelangelo",
+        "model_answer": "The context does not provide information about the sculptor of the famous statue of 'David', so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Arnolfini Portrait",
+        "model_answer": "The context does not provide the title of the famous 15th-century painting by Jan van Eyck depicting a couple, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_037",
+        "question": "Which non-Indo-European people inhabited north-western Italy before the rise of Rome?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Etruscans",
+        "model_answer": "The context does not provide information about which non-Indo-European people inhabited north-western Italy before the rise of Rome, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_038",
+        "question": "According to legend, in what year was Rome founded?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "753 BC",
+        "model_answer": "According to legend, Rome was founded in 753 BC by twin brothers Romulus and Remus."
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Rome and Carthage",
+        "model_answer": "The context does not mention which two powers fought in the Punic Wars, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_040",
+        "question": "Whose translation of the Bible was key to the development of the modern Standard German language?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Martin Luther",
+        "model_answer": "The passage says that the publication of Luther's Bible was a decisive moment in the spread of literacy in early modern Germany, and promoted the development of non-local forms of language and exposed all speakers to forms of German from outside their own area. Therefore, the translation of the Bible by Martin Luther was key to the development of the modern Standard German language."
+      },
+      {
+        "question_id": "q_041",
+        "question": "The kingdom of which Germanic tribe formed the basis for the state in modern-day France?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Franks",
+        "model_answer": "The context does not provide information about the basis for the state in modern-day France, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_042",
+        "question": "What were the major military expeditions by European Christians to the Holy Land called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Crusades",
+        "model_answer": "The context does not specify the major military expeditions by European Christians to the Holy Land, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_043",
+        "question": "Which famous painting by Pablo Picasso depicts the horrors of the bombing of a town during the Spanish Civil War?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Guernica",
+        "model_answer": "The context does not provide the name of the famous painting by Pablo Picasso that depicts the horrors of the bombing of a town during the Spanish Civil War, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_044",
+        "question": "What was the name of the political regime led by Benito Mussolini in Italy?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Fascism",
+        "model_answer": "The name of the political regime led by Benito Mussolini in Italy is not explicitly mentioned in the context, so I cannot answer this question from the provided context."
+      }
+    ]
+  },
+  "rag_hybrid_retrieval_size_200_overlap_40_k_5.json": {
+    "num_questions": 44,
+    "supported": 7,
+    "partially_supported": 3,
+    "unsupported": 34,
+    "faithfulness_score": 0.1932,
+    "per_question": [
+      {
+        "question_id": "q_001",
+        "question": "What is the capital of France?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Paris",
+        "model_answer": "The context does not provide information about the capital of France, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_002",
+        "question": "What is the capital of Italy?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Rome",
+        "model_answer": "The context does not provide information about the capital of Italy, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_003",
+        "question": "When did World War II begin?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1939",
+        "model_answer": "The context does not specify when World War II began, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_004",
+        "question": "Who was the first emperor of Rome?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Augustus",
+        "model_answer": "The context does not provide information about the first emperor of Rome, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_005",
+        "question": "What year did the French Revolution start?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1789",
+        "model_answer": "The context does not specify the year in which the French Revolution started, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_006",
+        "question": "What are the four traditional periods of European history?",
+        "label": "supported",
+        "token_overlap_ratio": 0.8571,
+        "expected_answer": "Prehistoric Europe, classical antiquity, the Middle Ages, and the modern era",
+        "model_answer": "Sure, the four traditional periods of European history are:\n\n- Prehistoric Europe (prior to about 800 BC)\n- Classical antiquity (800 BC to AD 500)\n- The Middle Ages (AD 500–1500)\n- The modern era (since AD 1500)"
+      },
+      {
+        "question_id": "q_007",
+        "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "476 AD",
+        "model_answer": "The passage does not specify in which year the fall of the Western Roman Empire is traditionally dated, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_008",
+        "question": "Who was the Frankish king crowned as Roman Emperor in 800 AD?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Charlemagne",
+        "model_answer": "The context does not specify the Frankish king crowned as Roman Emperor in 800 AD, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_009",
+        "question": "What was the period of renewed interest in classical art and learning in Europe called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Renaissance",
+        "model_answer": "The period of renewed interest in classical art and learning in Europe is not specified in the context, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_010",
+        "question": "What event is traditionally considered the start of the Reformation?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 0.8333,
+        "expected_answer": "The publication of the 95 Theses by Martin Luther in 1517",
+        "model_answer": "The event traditionally considered the start of the Reformation is the publication of Martin Luther's Ninety-Five Theses in 1517."
+      },
+      {
+        "question_id": "q_011",
+        "question": "Who was the leader of Nazi Germany during World War II?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Adolf Hitler",
+        "model_answer": "The context does not mention the leader of Nazi Germany during World War II, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_012",
+        "question": "What was the peace treaty that ended World War I?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Treaty of Versailles",
+        "model_answer": "The passage does not specify what the peace treaty that ended World War I was, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_013",
+        "question": "In what year was the Berlin Wall torn down?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1989",
+        "model_answer": "The context does not specify the year in which the Berlin Wall was torn down, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_014",
+        "question": "Which ancient civilization built the palace at Knossos on Crete?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Minoan civilization",
+        "model_answer": "The context does not mention which ancient civilization built the palace at Knossos on Crete, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_015",
+        "question": "At which battle in 732 did the Franks stop the Muslim advance into Europe?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 0.5385,
+        "expected_answer": "The Battle of Tours (or Battle of Poitiers)",
+        "model_answer": "The passage does not specify which battle in 732 the Franks stopped the Muslim advance into Europe. Therefore, the answer cannot be found in the context."
+      },
+      {
+        "question_id": "q_016",
+        "question": "What was the name of the pandemic that killed a huge part of Europe's population in the 14th century?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Black Death (or bubonic plague)",
+        "model_answer": "The name of the pandemic that killed a huge part of Europe's population in the 14th century is not explicitly mentioned in the context, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_017",
+        "question": "With which war is Joan of Arc associated?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Hundred Years' War",
+        "model_answer": "According to the context, Joan of Arc is associated with the Hundred Years' War."
+      },
+      {
+        "question_id": "q_018",
+        "question": "Who wrote the famous political treatise, 'The Prince'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Niccolò Machiavelli",
+        "model_answer": "The context does not mention who wrote the famous political treatise, 'The Prince', so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_019",
+        "question": "Which maritime republic was a major rival of Genoa and dominated trade in the Mediterranean?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Venice",
+        "model_answer": "The context does not mention the name of a maritime republic that was a major rival of Genoa and dominated trade in the Mediterranean, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_020",
+        "question": "Which famous Florentine family were great patrons of the arts during the Renaissance?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "The Medici",
+        "model_answer": "Sure, the answer is:\n\nThe Medici family was the most famous Florentine family that were great patrons of the arts during the Renaissance."
+      },
+      {
+        "question_id": "q_021",
+        "question": "Who was the leader of the 'Expedition of the Thousand' and a key figure in the unification of Italy?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Giuseppe Garibaldi",
+        "model_answer": "The context does not specify the leader of the \"Expedition of the Thousand\" and a key figure in the unification of Italy, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_022",
+        "question": "In what year did Italy become a republic?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1946",
+        "model_answer": "The context does not specify the year in which Italy became a republic, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_023",
+        "question": "What was the name given by the Greeks to the Iberian Peninsula, after a river?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Iberia",
+        "model_answer": "The passage does not mention the name given by the Greeks to the Iberian Peninsula, after a river, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_024",
+        "question": "What was the Muslim-ruled area on the Iberian Peninsula called?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Al-Andalus",
+        "model_answer": "The Muslim-ruled area on the Iberian Peninsula was called Al-Andalus."
+      },
+      {
+        "question_id": "q_025",
+        "question": "In which year did Christopher Columbus first reach the Americas?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1492",
+        "model_answer": "The context does not specify in which year Christopher Columbus first reached the Americas, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_026",
+        "question": "Which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Philip II",
+        "model_answer": "The context does not mention the name of any Spanish king who ruled during the country's 'Golden Age' and was married to Mary Tudor. Therefore, I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_027",
+        "question": "What were the military campaigns to reconquer the Iberian Peninsula from the Moors called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Reconquista",
+        "model_answer": "The context does not specify the name of the military campaigns to reconquer the Iberian Peninsula from the Moors, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_028",
+        "question": "Which French king is known as the 'Sun King'?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Louis XIV",
+        "model_answer": "According to the context, Louis XIV of France is known as the 'Sun King'."
+      },
+      {
+        "question_id": "q_029",
+        "question": "In which year did the French Revolution begin?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "1789",
+        "model_answer": "The context does not specify the year in which the French Revolution began, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_030",
+        "question": "Who was the famous French military leader and emperor who was finally defeated at Waterloo?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Napoleon Bonaparte",
+        "model_answer": "The context does not mention the name of the famous French military leader and emperor who was finally defeated at Waterloo, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_031",
+        "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Mona Lisa (or La Gioconda)",
+        "model_answer": "The context does not specify the name of the famous painting by Leonardo da Vinci housed in the Louvre, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_032",
+        "question": "What invention by Johannes Gutenberg revolutionized the spread of knowledge?",
+        "label": "partially_supported",
+        "token_overlap_ratio": 0.6667,
+        "expected_answer": "The printing press",
+        "model_answer": "The invention by Johannes Gutenberg revolutionized the spread of knowledge by allowing the rapid transmission of ideas through printing."
+      },
+      {
+        "question_id": "q_033",
+        "question": "To which artistic era did Michelangelo belong?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Renaissance",
+        "model_answer": "The context does not provide information about the artistic era to which Michelangelo belonged, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_034",
+        "question": "Which artistic style, known for its drama and grandeur, followed the Renaissance?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Baroque",
+        "model_answer": "The context does not provide information about which artistic style followed the Renaissance, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_035",
+        "question": "Who is the sculptor of the famous statue of 'David'?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Michelangelo",
+        "model_answer": "The context does not provide the name of the sculptor of the famous statue of 'David'. Therefore, I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_036",
+        "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Arnolfini Portrait",
+        "model_answer": "The context does not mention the title of the famous 15th-century painting by Jan van Eyck depicting a couple, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_037",
+        "question": "Which non-Indo-European people inhabited north-western Italy before the rise of Rome?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Etruscans",
+        "model_answer": "The context does not specify which non-Indo-European people inhabited north-western Italy before the rise of Rome, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_038",
+        "question": "According to legend, in what year was Rome founded?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "753 BC",
+        "model_answer": "According to legend, Rome was founded in 753 BC by twin brothers Romulus and Remus, who descended from the Trojan prince Aeneas and who were grandsons of Numitor of Alba Longa."
+      },
+      {
+        "question_id": "q_039",
+        "question": "Which two powers fought in the Punic Wars?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Rome and Carthage",
+        "model_answer": "The Punic Wars were fought between Carthage and the Roman Republic.\n\nNot found in the context."
+      },
+      {
+        "question_id": "q_040",
+        "question": "Whose translation of the Bible was key to the development of the modern Standard German language?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Martin Luther",
+        "model_answer": "The passage does not specify the name of the person who translated the Bible into High German, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_041",
+        "question": "The kingdom of which Germanic tribe formed the basis for the state in modern-day France?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Franks",
+        "model_answer": "The context does not mention the kingdom of any Germanic tribe that formed the basis for the state in modern-day France, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_042",
+        "question": "What were the major military expeditions by European Christians to the Holy Land called?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "The Crusades",
+        "model_answer": "The context does not provide information about the major military expeditions by European Christians to the Holy Land, so I cannot answer this question from the provided context."
+      },
+      {
+        "question_id": "q_043",
+        "question": "Which famous painting by Pablo Picasso depicts the horrors of the bombing of a town during the Spanish Civil War?",
+        "label": "supported",
+        "token_overlap_ratio": 1.0,
+        "expected_answer": "Guernica",
+        "model_answer": "The context describes the painting \"Guernica\" by Pablo Picasso, which depicts the horrors of the bombing of a town during the Spanish Civil War."
+      },
+      {
+        "question_id": "q_044",
+        "question": "What was the name of the political regime led by Benito Mussolini in Italy?",
+        "label": "unsupported",
+        "token_overlap_ratio": 0.0,
+        "expected_answer": "Fascism",
+        "model_answer": "The name of the political regime led by Benito Mussolini in Italy is not explicitly mentioned in the context, so I cannot answer this question from the provided context."
+      }
+    ]
+  },
   "rag_retrieval_size_1000_overlap_200_k_1.json": {
     "num_questions": 44,
     "supported": 4,

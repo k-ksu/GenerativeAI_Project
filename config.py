@@ -1,4 +1,7 @@
 RAW_DATA_DIR = "data/raw"
+BGE_MODEL_NAME = "BAAI/bge-large-en-v1.5"
+BGE_EMBEDDING_DIMENSION = 1024
+BGE_EMBEDDINGS_DIR = "data/embeddings_bge"
 PROCESSED_DATA_DIR = "data/processed"
 CLEANED_DATA_DIR = "data/cleaned"
 CHUNKS_DIR = "data/chunks"
@@ -20,7 +23,7 @@ REFUSAL_PATTERNS = [
     "do not have enough information",
     "context does not mention",
     "not enough information",
-    "cannot determine"
+    "cannot determine",
 ]
 
 CHUNK_CONFIGS = [
@@ -36,4 +39,16 @@ TOP_K_VALUES = [1, 3, 5, 10]
 DEFAULT_PROMPT_TEMPLATE = """Answer the following history question concisely.
 
 Question: {question}
+Answer:"""
+
+EXTRACTION_PROMPT_TEMPLATE = """Extract the exact answer from the context below.
+Give a short factual answer only — a name, date, or brief phrase.
+Do not explain. Do not repeat the question.
+If the answer is not in the context, say "Not found".
+
+Context:
+{context}
+
+Question: {question}
+
 Answer:"""

@@ -1,0 +1,715 @@
+{
+  "embedding_backend": "hybrid_rrf",
+  "embedding_model": "bge+bm25 (RRF k=60)",
+  "embedding_dimension": null,
+  "chunk_size": 200,
+  "overlap": 40,
+  "top_k": 1,
+  "num_questions": 44,
+  "results": [
+    {
+      "question_id": "q_001",
+      "question": "What is the capital of France?",
+      "expected_answer": "Paris",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_france_wikipedia_chunk_0011",
+          "doc_id": "history_of_france_wikipedia",
+          "source_file": "History of France - Wikipedia.txt",
+          "score": 0.030303,
+          "text": "war against the Goths in Aquitanië, which was mainly aimed for gathering loot. It took the Gothic king Alaric II two years to push back the Franks. In 507 a second war started. This time Clovis defeated Alaric at Vouillé and annexed Aquitaine, and thus Toulouse, into his Frankish kingdom. After his victory the pagan Clovis adopted Catholicism. This gave him greater legitimacy and power over his Christian subjects and granted him clerical support against the Arian Visigoths. The Goths retired to Toledo in what would become Spain. Clovis made Paris his capital and established the Merovingian dynasty but his kingdom did not survive his death in 511. Under Frankish inheritance traditions, all sons inherit part of the land, so four kingdoms emerged: centered on Paris, Orléans, Soissons, and Rheims. Over time, the borders and numbers of Frankish kingdoms were fluid and changed frequently. Also during this time, the mayors of the palace, originally the chief advisors to the kings, became the real power in the Frankish lands; the Merovingian kings were reduced to little more than figureheads. By this time Muslims had conquered Hispania, and Septimania became part of the Al-Andalus, which threatened the Frankish kingdoms. Duke Odo the"
+        }
+      ]
+    },
+    {
+      "question_id": "q_002",
+      "question": "What is the capital of Italy?",
+      "expected_answer": "Rome",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "ancient_greek_architecture_wikipedia_chunk_0044",
+          "doc_id": "ancient_greek_architecture_wikipedia",
+          "source_file": "Ancient Greek architecture - Wikipedia.txt",
+          "score": 0.016393,
+          "text": "at Delphi in 525 BC and at the Erechtheion, about 410 BC. The Corinthian order does not have its origin in wooden architecture. It grew directly out of the Ionic in the mid 5th century BC, and was initially of much the same style and proportion, but distinguished by its more ornate capitals. The capital was very much deeper than either the Doric or the Ionic capital, being shaped like a large krater, a bell-shaped mixing bowl, and being ornamented with a double row of acanthus leaves above which rose voluted tendrils, supporting the corners of the abacus, which, no longer perfectly square, splayed above them. According to Vitruvius, the capital was invented by a bronze founder, Callimachus of Corinth, who took his inspiration from a basket of offerings that had been placed on a grave, with a flat tile on top to protect the goods. The basket had been placed on the root of an acanthus plant which had grown up around it. The ratio of the column height to diameter is generally 10:1, with the capital taking up more than 1/10 of the height. The ratio of capital height to diameter is generally about 1.16:1. The Corinthian order"
+        }
+      ]
+    },
+    {
+      "question_id": "q_003",
+      "question": "When did World War II begin?",
+      "expected_answer": "1939",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_europe_wikipedia_chunk_0122",
+          "doc_id": "history_of_europe_wikipedia",
+          "source_file": "History of Europe - Wikipedia.txt",
+          "score": 0.031514,
+          "text": "ﬁnancial aid. ▪ 1941: Germany invades the Soviet Union in Operation Barbarossa; fails to capture Moscow or Leningrad. ▪ 1942: Adolf Hitler and Nazi Germany commence the Holocaust – a Final Solution, with the murder of 6 million Jews. ▪ 1943: After Stalingrad and Kursk, Soviet forces begin recapturing Nazi-occupied territory in the East. ▪ 1944: U.S., British and Canadian armed forces invade Nazi-occupied France at Normandy. ▪ 1945: Hitler commits suicide, Mussolini is executed. World War II ends with Europe in ruins and Germany defeated. ▪ 1945: United Nations formed. ▪ 1947: The British Empire begins a process of voluntarily dismantling with the granting of independence to India and Pakistan. ▪ 1947: Cold War begins as Europe is polarized East versus West. ▪ 1948–1951: U.S. provides large sums to rebuild Western Europe through the Marshall Plan; stimulates large-scale modernization of European industries and reduction of trade restrictions. History of Europe - Wikipedia https://en.wikipedia.org/wiki/History_of_Europe Стр. 47 из 62 27.02.2026, 16:07 ▪ 1949: The NATO alliance is established. ▪ 1950: The Schuman Declaration begins the process of European integration. ▪ 1954: The French Empire begins to be dismantled; Withdraws from Vietnam. ▪ 1955: USSR creates a rival military coalition to the"
+        }
+      ]
+    },
+    {
+      "question_id": "q_004",
+      "question": "Who was the first emperor of Rome?",
+      "expected_answer": "Augustus",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_europe_wikipedia_chunk_0020",
+          "doc_id": "history_of_europe_wikipedia",
+          "source_file": "History of Europe - Wikipedia.txt",
+          "score": 0.032018,
+          "text": "and 8th centuries (see Muslim conquests). The Arab invasion from the east was stopped after the intervention of the Bulgarian Empire (see Han Tervel). The Middle Ages are commonly dated from the fall of the Western Roman Empire (or by some scholars, before that) in the 5th century to the beginning of the early modern period in the 16th century marked by the rise of nation states, the division of Western Christianity in the Reformation, the rise of humanism in the Italian Renaissance, and the beginnings of European overseas expansion which allowed for the Columbian Exchange. Many consider Emperor Constantine I (reigned 306–337) to be the first \" Byzantine emperor \". It was he who moved the imperial capital in 324 from Nicomedia to Byzantium, which re-founded as Constantinople, or Nova Roma (\" New Rome \"). The city of Rome itself had not served as the capital since the reign of Diocletian (284–305). Some date the beginnings of the Empire to the reign of Theodosius I (379–395) and Christianity's official supplanting of the pagan Roman religion, or following his death in 395, when the empire was split into two parts, with capitals in Rome and Constantinople. Others place it yet"
+        }
+      ]
+    },
+    {
+      "question_id": "q_005",
+      "question": "What year did the French Revolution start?",
+      "expected_answer": "1789",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_europe_wikipedia_chunk_0117",
+          "doc_id": "history_of_europe_wikipedia",
+          "source_file": "History of Europe - Wikipedia.txt",
+          "score": 0.031258,
+          "text": "Southeastern Europe. ▪ 1700: Outbreak of the War of the Spanish Succession and the Great Northern War. The ﬁrst would check the aspirations of Louis XIV, king of France to dominate European affairs; the second would lead to Russia's emergence as a great power and a recognizably European state. ▪ 18th century: Age of Enlightenment spurs an intellectual renaissance across Europe. ▪ 1707: The Kingdom of Great Britain is formed by the union of the Kingdom of England and the Kingdom of Scotland. ▪ 1712: Thomas Newcomen invents ﬁrst practical steam engine which begins Industrial Revolution in Britain. ▪ 1721: Foundation of the Russian Empire. ▪ 1775: James Watt invents a new efﬁcient steam engine accelerating the Industrial Revolution in Britain. ▪ 1776: Adam Smith publishes The Wealth of Nations. ▪ 1784: Immanuel Kant publishes Answering the Question: What Is Enlightenment?. ▪ 1789: Beginning of the French Revolution and end of the absolute monarchy in France. History of Europe - Wikipedia https://en.wikipedia.org/wiki/History_of_Europe Стр. 45 из 62 27.02.2026, 16:07 ▪ 1792–1802: French Revolutionary Wars. ▪ 1799: Napoleon comes to power, eventually consolidating his position as Emperor of the French. ▪ 1803–1815: Napoleonic Wars end in defeat of Napoleon. ▪ 1806: Napoleon"
+        }
+      ]
+    },
+    {
+      "question_id": "q_006",
+      "question": "What are the four traditional periods of European history?",
+      "expected_answer": "Prehistoric Europe, classical antiquity, the Middle Ages, and the modern era",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "art_of_europe_wikipedia_chunk_0002",
+          "doc_id": "art_of_europe_wikipedia",
+          "source_file": "Art of Europe - Wikipedia.txt",
+          "score": 0.032522,
+          "text": "are: Classical, Byzantine, Medieval, Gothic, Renaissance, Baroque, Rococo, Neoclassical, Modern, Postmodern and New European Painting. Art of Europe - Wikipedia https://en.wikipedia.org/wiki/Art_of_Europe Стр. 1 из 33 27.02.2026, 16:09 Kosovo Maiden; by Uroš Predić; 1919; oil on canvas; 1.95 x 2.64m; National Museum of Serbia (Belgrade, Serbia) The Art of Painting; by Johannes Vermeer; 1666–1668; oil on canvas; 1.3 x 1.1 m; Kunsthistorisches Museum (Vienna, Austria) European prehistoric art is an important part of the European cultural heritage. Prehistoric art history is usually divided into four main periods: Stone Age, Neolithic, Bronze Age, and Iron Age. Most of the remaining artifacts of this period are small sculptures and cave paintings. Much surviving prehistoric art is small portable sculptures, with a small group of female Venus figurines such as the Venus of Willendorf (24,000–22,000 BC) found across central Europe; the 30 cm tall Löwenmensch figurine of about 30,000 BCE has hardly any pieces that can be related to it. The Swimming Reindeer of about 11,000 BCE is one of the finest of a number of Magdalenian carvingsinboneorantlerofanimalsinthe art of the Upper Paleolithic, though they are outnumbered by engraved pieces, which are sometimes classified as sculpture. With the beginning of the Mesolithic in Europe"
+        }
+      ]
+    },
+    {
+      "question_id": "q_007",
+      "question": "In which year is the fall of the Western Roman Empire traditionally dated?",
+      "expected_answer": "476 AD",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_europe_wikipedia_chunk_0020",
+          "doc_id": "history_of_europe_wikipedia",
+          "source_file": "History of Europe - Wikipedia.txt",
+          "score": 0.032002,
+          "text": "and 8th centuries (see Muslim conquests). The Arab invasion from the east was stopped after the intervention of the Bulgarian Empire (see Han Tervel). The Middle Ages are commonly dated from the fall of the Western Roman Empire (or by some scholars, before that) in the 5th century to the beginning of the early modern period in the 16th century marked by the rise of nation states, the division of Western Christianity in the Reformation, the rise of humanism in the Italian Renaissance, and the beginnings of European overseas expansion which allowed for the Columbian Exchange. Many consider Emperor Constantine I (reigned 306–337) to be the first \" Byzantine emperor \". It was he who moved the imperial capital in 324 from Nicomedia to Byzantium, which re-founded as Constantinople, or Nova Roma (\" New Rome \"). The city of Rome itself had not served as the capital since the reign of Diocletian (284–305). Some date the beginnings of the Empire to the reign of Theodosius I (379–395) and Christianity's official supplanting of the pagan Roman religion, or following his death in 395, when the empire was split into two parts, with capitals in Rome and Constantinople. Others place it yet"
+        }
+      ]
+    },
+    {
+      "question_id": "q_008",
+      "question": "Who was the Frankish king crowned as Roman Emperor in 800 AD?",
+      "expected_answer": "Charlemagne",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "20_influential_leaders_in_european_history_chunk_0004",
+          "doc_id": "20_influential_leaders_in_european_history",
+          "source_file": "20 Influential Leaders in European History.txt",
+          "score": 0.032002,
+          "text": "13:51 across Europe. Clovis c. 466 – 511m Antoine-Jean Gros / Public domain / Wikimedia Commons As king of the Salian Franks, Clovis conquered the other Frankish groups to create one kingdom with much of its land in modern France; in doing so he established the Merovingian dynasty which ruled until the seventh century. He is also remembered for changing to Catholic Christianity, possibly after dabbling with Arianism. In France, he is considered by many to be the founder of the nation, while some in Germany also claim him as a key figure. Charlemagne 747 - 814 20 Inﬂuential Leaders in European History https://www.thoughtco.com/key-leaders-in-european-history-1221601 Стр. 7 из 24 01.03.2026, 13:51 Elizabeth Beard / Getty Images Inheriting part of the Frankish kingdom in 768, Charlemagne was soon ruler of the whole lot, a dominion which he expanded to include much of western and central Europe: he is often named as Charles I in lists of the rulers of France, Germany, and the Holy Roman Empire. Indeed, he was crowned by the Pope as a Roman Emperor on Christmas Day 800. A later exemplar of good leadership, he prompted religious, cultural, and political developments. Ferdinand and Isabella of Spain 1452 – 1516"
+        }
+      ]
+    },
+    {
+      "question_id": "q_009",
+      "question": "What was the period of renewed interest in classical art and learning in Europe called?",
+      "expected_answer": "The Renaissance",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "art_of_europe_wikipedia_chunk_0001",
+          "doc_id": "art_of_europe_wikipedia",
+          "source_file": "Art of Europe - Wikipedia.txt",
+          "score": 0.032522,
+          "text": "a distant memory in parts of the Medieval period, to re- emerge in the Renaissance, suffer a period of what some early art historians viewed as \"decay\" during the Baroque period, to reappear in a refined form in Neo-Classicism and to be reborn in Post-Modernism. Before the 1800s, the Christian church was a major influence on European art, and commissions from the Church provided the major source of work for artists. In the same period there was also a renewed interest in classical mythology, great wars, heroes and heroines, and themes not connected to religion. Most art of the last 200 years has been produced without reference to religion and often with no particular ideology at all, but art has often been influenced by political issues, whether reflecting the concerns of patrons or the artist. European art is arranged into a number of stylistic periods, which, historically, overlap each other as different styles flourished in different areas. Broadly the periods are: Classical, Byzantine, Medieval, Gothic, Renaissance, Baroque, Rococo, Neoclassical, Modern, Postmodern and New European Painting. Art of Europe - Wikipedia https://en.wikipedia.org/wiki/Art_of_Europe Стр. 1 из 33 27.02.2026, 16:09 Kosovo Maiden; by Uroš Predić; 1919; oil on canvas; 1.95 x 2.64m; National"
+        }
+      ]
+    },
+    {
+      "question_id": "q_010",
+      "question": "What event is traditionally considered the start of the Reformation?",
+      "expected_answer": "The publication of the 95 Theses by Martin Luther in 1517",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_europe_wikipedia_chunk_0001",
+          "doc_id": "history_of_europe_wikipedia",
+          "source_file": "History of Europe - Wikipedia.txt",
+          "score": 0.031099,
+          "text": "4th century AD. The fall of the Western Roman Empire in AD 476 traditionally marks the start of the Middle Ages. While the Eastern Roman Empire would continue for another 1000 years, the former lands of the Western Empire would be fragmented into a number of states. The first great empire of the Middle Ages was the Frankish Empire of Charlemagne, while the Islamic conquest of Iberia established Al- Andalus. The Viking Age saw a second great migration of Norse peoples. Attempts to retake the Levant from the Muslim states that occupied it made the High Middle Ages the age of the Crusades, while the political system of feudalism reached its height. The Late Middle Ages were marked by a large population decline, as Europe faced the bubonic plague, as well as invasions by the Mongol peoples from the Eurasian Steppe. At the end of the Middle Ages, there was a transitional period, known as the Renaissance. Early modern Europe is usually dated to the end of the 15th century. Technological changes such as gunpowder and the printing press changed how warfare was conducted and how knowledge was preserved and disseminated. The Reformation sawthe fragmentation of religious thought, leading to"
+        }
+      ]
+    },
+    {
+      "question_id": "q_011",
+      "question": "Who was the leader of Nazi Germany during World War II?",
+      "expected_answer": "Adolf Hitler",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "20_influential_leaders_in_european_history_chunk_0012",
+          "doc_id": "20_influential_leaders_in_european_history",
+          "source_file": "20 Influential Leaders in European History.txt",
+          "score": 0.029199,
+          "text": "Russia as the 1917 revolution unfolded. But they did, and he arrived in time to inspire the Bolshevik revolution of October 1917. He went on to head the communist government, overseeing the Russian Empire's transformation into the USSR. He has been labeled as history’s greatest revolutionary. Winston Churchill 1874 – 1965 Central Press / Getty Images A mixed political reputation earned before 1939 was completely rewritten by Churchill’s actions during World War II when Britain turned to his leadership. He repaid the trust easily, his oratory and ability as Prime Minister driving the nation forward to eventual victory over Germany. Along with Hitler and Stalin, he was the third key and famous European leader of that conflict. However, he lost the 1945 election and had to wait until 1951 to become peacetime leader. A sufferer of depression, Churchill also wrote history. Stalin 1879 – 1953 20 Inﬂuential Leaders in European History https://www.thoughtco.com/key-leaders-in-european-history-1221601 Стр. 18 из 24 01.03.2026, 13:51 Laski Diffusion / Getty Images Stalin rose through the ranks of Bolshevik revolutionaries until he controlled all of the USSR, a position he secured by ruthless purges and the imprisonment of millions in work camps called Gulags. He oversaw a program of"
+        }
+      ]
+    },
+    {
+      "question_id": "q_012",
+      "question": "What was the peace treaty that ended World War I?",
+      "expected_answer": "The Treaty of Versailles",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_europe_wikipedia_chunk_0091",
+          "doc_id": "history_of_europe_wikipedia",
+          "source_file": "History of Europe - Wikipedia.txt",
+          "score": 0.032522,
+          "text": "liberal rule, the October Revolution brought Vladimir Lenin and the Bolsheviks to power, leading to the creation of the Soviet Union. With American entry into the war in 1917, and the failure of Germany's spring 1918 offensive, Germany had run out of manpower. Germany's allies, Austria-Hungary and the Ottoman Empire, surrendered and dissolved, followed by Germany on 11 November 1918. The world war was settled by the victors at the Paris Peace Conference, 1919. The major decisions were the creation of the League of Nations; peacetreatieswith defeated enemies, most notably the Treaty of Versailles with Germany; the awarding of German and Ottoman overseas possessions as \"mandates\", chiefly to Britain and France; and the drawing of new national boundaries to better reflect the forces of nationalism. Multiple nations were required to sign minority rights treaties. The Treaty of Versailles itself weakened Germany's military power and placed full blame for the war and costly reparations on its shoulders – the humiliation and resentment in Germany was probably one of the causes of Nazi success and indirectly a cause of World War II. 1914–1945: two world wars World War I History of Europe - Wikipedia https://en.wikipedia.org/wiki/History_of_Europe Стр. 35 из 62 27.02.2026, 16:07 Adolf"
+        }
+      ]
+    },
+    {
+      "question_id": "q_013",
+      "question": "In what year was the Berlin Wall torn down?",
+      "expected_answer": "1989",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_europe_wikipedia_chunk_0102",
+          "doc_id": "history_of_europe_wikipedia",
+          "source_file": "History of Europe - Wikipedia.txt",
+          "score": 0.032522,
+          "text": "as well as the public housing. One result was escalating social tensions in Britain. Thatcher eventually defeated her opponents and radically changed the British economy, but controversy persisted. Western Europe began economic and then political integration, with the aim to unite the region and defend it. This process included Recent history History of Europe - Wikipedia https://en.wikipedia.org/wiki/History_of_Europe Стр. 39 из 62 27.02.2026, 16:07 Germans standing on top of the Berlin Wall at the Brandenburg Gate, November 1989; it would begin to be torn apart in the following days. Changes in national boundaries after the end of the Cold War and the dissolution of the Soviet Union in 1991 organisations such as the European Coal and Steel Community and the Council of Europe. The Solidarność movement in the 1980s weakened the Communist government in Poland. At the time the Soviet leader Mikhail Gorbachev initiated perestroika and glasnost, which weakened Soviet influence in Europe. In 1989 after the Pan-European Picnic the Iron Curtain and the Berlin Wall came down and Communist governments outside the Soviet Union were deposed. In 1990 the Federal Republic of Germany absorbed East Germany. In 1991 the Communist Party of the Soviet Union in Moscow collapsed, ending the"
+        }
+      ]
+    },
+    {
+      "question_id": "q_014",
+      "question": "Which ancient civilization built the palace at Knossos on Crete?",
+      "expected_answer": "The Minoan civilization",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_europe_wikipedia_chunk_0007",
+          "doc_id": "history_of_europe_wikipedia",
+          "source_file": "History of Europe - Wikipedia.txt",
+          "score": 0.032787,
+          "text": "Knossos, Crete, c. 1700 BC The first well-known literate civilization in Europe was the Minoan civilization that arose on the island of Crete and flourished from approximately the 27th century BC to the 15th century BC. The Minoans were replaced by the Mycenaean civilization which flourished during the period roughly between 1600 BC, when Helladic culture in mainland Greece was transformed under influences from Minoan Crete, and 1100 BC. The major Mycenaean cities were Mycenae and Tiryns i n Argolis, Pylos in Messenia, Athens in Attica, Thebes and Orchomenus in Boeotia, and Iolkos in Thessaly. In Crete, the Mycenaeans occupied Knossos. Mycenaean settlement sites also appeared in Epirus, Macedonia, on islands in the Aegean Sea, on the coast of Asia Minor, the Levant, Cyprus and Italy. Mycenaean artefacts have been found well outside the limits of the Mycenean world. Quite unlike the Minoans, whose society benefited from trade, the Mycenaeans advanced through conquest. Mycenaean civilization was dominated by a warrior aristocracy. Around 1400 BC, the Mycenaeans extended their control to Crete, the centre of the Minoan civilization. The Mycenaean civilization perished with the collapse of Bronze-Age civilization on the eastern shores of the Mediterranean Sea. The collapse is commonly attributed"
+        }
+      ]
+    },
+    {
+      "question_id": "q_015",
+      "question": "At which battle in 732 did the Franks stop the Muslim advance into Europe?",
+      "expected_answer": "The Battle of Tours (or Battle of Poitiers)",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_spain_wikipedia_chunk_0021",
+          "doc_id": "history_of_spain_wikipedia",
+          "source_file": "History of Spain - Wikipedia.txt",
+          "score": 0.032258,
+          "text": "war in the Visigothic Kingdom. Crossing the Strait of Gibraltar, they won a decisive victory in the summer of 711 when the Visigothic King Roderic was defeated and killed on July 19 at the Battle of Guadalete. Tariq's commander, Musa, quickly crossed with Arab reinforcements, and by 718 the Muslims were in control of nearly the whole Iberian Peninsula. The advance into Western Europe was only stopped in what is now north-central France by the West Germanic Franks under Charles Martel at the Battle of Tours in 732. The Muslim conquerors (also known as \"Moors\") were Arabs and Berbers; following the conquest, conversion and arabization of the Hispano-Roman population took place, (muwalladum or Muwallad). After a long process, spurred on in the 9th and 10th centuries, the majority of the population in Al-Andalus converted to Islam. The Muslim population was divided per ethnicity (Arabs, Berbers, Muwallad), and the supremacy of Arabs over the rest of the groups was a recurrent cause for strife, rivalry and Religion Islamic al-Andalus and the Christian Reconquest (8th– 15th centuries) History of Spain - Wikipedia https://en.wikipedia.org/wiki/History_of_Spain Стр. 8 из 53 27.02.2026, 16:06 Visigothic church, San Pedro de la Nave. Zamora. Spain Visigothic Hispania and its"
+        }
+      ]
+    },
+    {
+      "question_id": "q_016",
+      "question": "What was the name of the pandemic that killed a huge part of Europe's population in the 14th century?",
+      "expected_answer": "The Black Death (or bubonic plague)",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "renaissance_wikipedia_chunk_0017",
+          "doc_id": "renaissance_wikipedia",
+          "source_file": "Renaissance - Wikipedia.txt",
+          "score": 0.032787,
+          "text": "the social upheaval and terror that followed the plague that devastated medieval Europe. One theory that has been advanced is that the devastation in Florence caused by the Black Death, which hit Europe between 1348 and 1350, resulted in a shift in the world view of people in 14th century Italy. Italy was particularly badly hit by the plague, and it has been speculated that the resulting familiarity with death caused thinkers to dwell more on their lives on Earth, rather than on spirituality and the afterlife. It has also been argued that the Black Death prompted a new wave of piety, manifested in the sponsorship of religious works of art. However, this does not fully explain why the Renaissance occurred specifically in Italy in the 14th century. The Black Death was a pandemic that affected all of Europe in the ways described, not only Italy. The Renaissance's emergence in Italy was most likely the result of the complex interaction of the above factors. The plague was carried by fleas on sailing vessels returning from the ports of Asia, spreading quickly due to lack of proper sanitation: the population of England, then about 4.2 million, lost 1.4 million people to"
+        }
+      ]
+    },
+    {
+      "question_id": "q_017",
+      "question": "With which war is Joan of Arc associated?",
+      "expected_answer": "The Hundred Years' War",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_france_wikipedia_chunk_0001",
+          "doc_id": "history_of_france_wikipedia",
+          "source_file": "History of France - Wikipedia.txt",
+          "score": 0.032266,
+          "text": "of Charlemagne's Carolingian Empire, known as West Francia, and achieved increasing prominence under the rule of the House of Capet, founded in 987. A succession crisis in 1328 led to the Hundred Years' War between the House of Valois and the House of Plantagenet. The war began in 1337 following Philip VI 's attempt to seize the Duchy of Aquitaine from its hereditary holder Edward III of England, the Plantagenet claimant to the French throne. A notable figure of the war was Joan of Arc, a French peasant girl who led forces against the English, establishing herself as a national heroine. The war ended with a Valois victory in 1453, strengthening French nationalism and increasing the power and reach of the French monarchy. During the Ancien Régime over the next centuries, France transformed into a centralized absolute monarchy through the Renaissance and Reformation. At the height of the French Wars of Religion, France became embroiled in another succession crisis, as the last Valois king, Henry III, fought against factions of the House of Bourbon and House of Guise. Henry, the Bourbon King of Navarre, won and established the Bourbon dynasty. A burgeoning worldwide colonial empire was established in the 16th"
+        }
+      ]
+    },
+    {
+      "question_id": "q_018",
+      "question": "Who wrote the famous political treatise, 'The Prince'?",
+      "expected_answer": "Niccolò Machiavelli",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_europe_wikipedia_chunk_0040",
+          "doc_id": "history_of_europe_wikipedia",
+          "source_file": "History of Europe - Wikipedia.txt",
+          "score": 0.032266,
+          "text": "Europe during a cultural lag of some two and a half centuries, its influence affected literature, philosophy, art, politics, science, history, religion, and other aspects of intellectual inquiry. The Humanists saw their repossession of a great past as a Renaissance – a rebirth of civilization itself. Important political precedents were also set in this period. Niccolò Machiavelli 's political writing in The Prince influenced later absolutism and realpolitik. Also important were the many patrons who ruled states and used the artistry of the Renaissance as a sign of their power. The Scientific Revolution took place in Europe starting towards the second half of the Renaissance period, with the 1543 Nicolaus Copernicus publication De revolutionibus orbium coelestium (On the Revolutions of the Heavenly Spheres) often cited as its beginning. Toward the end of the period, an era of discovery began. The growth of the Ottoman Empire, culminating in the fall of Constantinople in 1453, cut off trading possibilities with the east. Western Europe was forced to discover new trading routes, as happened with Columbus' travel to the Americas in 1492, and Vasco da Gama 's circumnavigation of India and Africa in 1498. The numerous wars did not prevent European states from"
+        }
+      ]
+    },
+    {
+      "question_id": "q_019",
+      "question": "Which maritime republic was a major rival of Genoa and dominated trade in the Mediterranean?",
+      "expected_answer": "Venice",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_italy_wikipedia_chunk_0025",
+          "doc_id": "history_of_italy_wikipedia",
+          "source_file": "History of Italy - Wikipedia.txt",
+          "score": 0.032787,
+          "text": "other city-states, played a crucial innovative role in financial development, devising the main instruments and practices of banking and new forms of social and economic organization. During the same period, Italy saw the rise of the Maritime Republics: Venice, Genoa, Pisa, Amalfi, Ragusa, Ancona, Gaeta and Noli. From the 10th to the 13th centuries these cities built fleets of ships for their own protection and to support extensive trade networks across the Mediterranean, leading to an essential role in the Crusades. The maritime republics, especially Venice and Genoa, soon became Europe's main gateways to trade with the East, establishing colonies as far as the Black Sea and often controlling most of the trade with the Byzantine Empire and the Islamic Mediterranean world. The county of Savoy expanded its territory into the peninsula in the late Middle Ages, while Florence developed into a highly organized commercial and financial city- state, becoming for many centuries the European capital of silk, wool, banking and jewellery. Central and southern Italy was far poorer than the north. Rome was largely in ruins, and the Papal States were a loosely administered region with little law and order. Partly because of this, the Papacy had relocated to"
+        }
+      ]
+    },
+    {
+      "question_id": "q_020",
+      "question": "Which famous Florentine family were great patrons of the arts during the Renaissance?",
+      "expected_answer": "The Medici",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "renaissance_wikipedia_chunk_0020",
+          "doc_id": "renaissance_wikipedia",
+          "source_file": "Renaissance - Wikipedia.txt",
+          "score": 0.032787,
+          "text": "of government. Black Death Renaissance - Wikipedia https://en.wikipedia.org/wiki/Renaissance Стр. 7 из 36 27.02.2026, 16:08 Lorenzo de' Medici, ruler of Florence and patron of arts (portrait by Vasari) It has long been a matter of debate why the Renaissance began in Florence, and not elsewhere in Italy. Scholars have noted several features unique to Florentine cultural life that may have caused such a cultural movement. Many have emphasized the role played by the Medici, a banking family and later ducal ruling house, in patronizing and stimulating the arts. Some historians have postulated that Florence was the birthplace of the Renaissance as a result of luck, i.e., because \" Great Men \" were born there by chance: Leonardo, Botticelli and Michelangelo were all born in Tuscany. Arguing that such chance seems improbable, other historians have contended that these \"Great Men\" were only able to rise to prominence because of the prevailing cultural conditions at the time. Lorenzo de' Medici (1449–1492) was the catalyst for an enormous amount of arts patronage, encouraging his countrymen to commission works from the leading artists of Florence, including Leonardo da Vinci, Sandro Botticelli, and Michelangelo Buonarroti. Works by Neri di Bicci, Botticelli, Leonardo, and Filippino Lippi had"
+        }
+      ]
+    },
+    {
+      "question_id": "q_021",
+      "question": "Who was the leader of the 'Expedition of the Thousand' and a key figure in the unification of Italy?",
+      "expected_answer": "Giuseppe Garibaldi",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_italy_wikipedia_chunk_0050",
+          "doc_id": "history_of_italy_wikipedia",
+          "source_file": "History of Italy - Wikipedia.txt",
+          "score": 0.032787,
+          "text": "to Italy in 1848. The creation of the Kingdom of Italy was the result of concerted efforts by Italian nationalists and monarchists loyal to the House of Savoy t o establish a united kingdom encompassing the entire Italian Peninsula. Sardinia industrialized from 1830 onward. A constitution, the Statuto Albertino was enacted in the year of revolutions, 1848, under liberal pressure. Under the same pressure, the First Italian War of Independence was declared on Austria. After initial success, the war took a turn for the worse and the Kingdom of Sardinia lost. After the Revolutions of 1848, the apparent leader of the Italian unification movement was Garibaldi, popular amongst southern Italians. Garibaldi led the Italian republican drive for unification in southern Italy, but the northern Italian monarchy of the History of Italy - Wikipedia https://en.wikipedia.org/wiki/History_of_Italy Стр. 19 из 53 27.02.2026, 16:06 Battle of Calataﬁmi between Garibaldi's Redshirts and the troops of the Kingdom of the Two Sicilies, during the Expedition of the Thousand Painting depicting the proclamation of the Kingdom of Italy in 1861 House of Savoy in the Kingdom of Piedmont-Sardinia whose government was led by Camillo Benso, Count of Cavour, also had the ambition of establishing a united Italian"
+        }
+      ]
+    },
+    {
+      "question_id": "q_022",
+      "question": "In what year did Italy become a republic?",
+      "expected_answer": "1946",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_italy_wikipedia_chunk_0093",
+          "doc_id": "history_of_italy_wikipedia",
+          "source_file": "History of Italy - Wikipedia.txt",
+          "score": 0.032522,
+          "text": "dead body of Benito Mussolini, Claretta Petacci and other executed fascists on display in Milan The symbolic photo of the birth of the Republic, which portrays the face of a young woman emerging from a copy of Il Corriere della Sera of 6 June 1946 with the title « È nata la Repubblica Italiana » (\"The Italian Republic is born\"). most of its former activists joined the Slovene Partisans. Manymembersofthe Italian resistance left their homes and went to live in the mountains, fighting against Italian fascists and German Nazi soldiers during the Italian Civil War. Many cities in Italy, including Turin, Naples and Milan, were freed by anti-fascist uprisings. The aftermath of World War II left Italy with a destroyed economy, a divided society, and anger against the monarchy for its endorsement of the Fascist regime. These frustrations contributed to a revival of the Italian republican movement. Umberto II was pressured by the threat of another civil war to call the 1946 Italian institutional referendum to decide whether Italy should remain a monarchy or become a republic. On 2 June 1946, the republican side won 54% of the vote and Italy officially became a republic. Under the Treaty of Peace"
+        }
+      ]
+    },
+    {
+      "question_id": "q_023",
+      "question": "What was the name given by the Greeks to the Iberian Peninsula, after a river?",
+      "expected_answer": "Iberia",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_spain_wikipedia_chunk_0007",
+          "doc_id": "history_of_spain_wikipedia",
+          "source_file": "History of Spain - Wikipedia.txt",
+          "score": 0.032787,
+          "text": "the arrival of early Phoenician settlers and traders (tentatively dated 9th century BC or later). The south of the peninsula was rich in archaic Phoenician colonies, unmatched by any other region in the central-western Mediterranean. They were small and densely packed settlements. The colony of Gadir —which sustained strong links with its metropolis of Tyre —stood out from the rest of the network of colonies, also featuring a more complex sociopolitical organization. Archaic Greeks arrived on the Peninsula by the late 7th century BC. They founded Greek colonies such as Emporion (570 BC). The Greeks are responsible for the name Iberia, apparently after the river Iber (Ebro). By the 6th century BC, much of the territory of southern Iberia passed to Carthage 's overarching influence (featuring two centres of Punic influence in Gadir and Mastia); the latter grip strengthened from the 4th century BC on. The Barcids, following their landing in Gadir in 237 BC, conquered the territories that belonged to the sphere of influence of Carthage. Until 219 BC, their presence in the peninsula was underpinned by their control of places such as Carthago Nova and Akra Leuké (both founded by Punics), as well as the network of old"
+        }
+      ]
+    },
+    {
+      "question_id": "q_024",
+      "question": "What was the Muslim-ruled area on the Iberian Peninsula called?",
+      "expected_answer": "Al-Andalus",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_europe_wikipedia_chunk_0024",
+          "doc_id": "history_of_europe_wikipedia",
+          "source_file": "History of Europe - Wikipedia.txt",
+          "score": 0.032266,
+          "text": "of Mediterranean North Africa and most of the Iberian Peninsula. Over the next centuries Muslim forces were able to take further European territory, including Cyprus, Malta, Crete, and Sicily and parts of southern Italy. The Muslim conquest of Hispania began when the Moors invaded the Christian Visigothic kingdom of Hispania in 711, under the Berber general Tariq ibn Ziyad. They landed at Gibraltar on 30 April and worked their way northward. Tariq's forces were joined the next year by those of his Arab superior, Musa ibn Nusair. During the eight-year campaign most of the Iberian Peninsula was brought under Muslim rule – save for small areas in the northwest (Asturias) and largely Basque regions in the Pyrenees. In 711, Visigothic Hispania was weakened because it was immersed in a serious internal crisis caused by a war of succession to the throne. The Early Middle Ages History of Europe - Wikipedia https://en.wikipedia.org/wiki/History_of_Europe Стр. 10 из 62 27.02.2026, 16:07 Europe in 1000, with most European states already formed Muslims took advantage of the crisis within the Hispano - Visigothic society to carry out their conquests. This territory, under the Arab name Al-Andalus, became part of the expanding Umayyad empire. The second siege"
+        }
+      ]
+    },
+    {
+      "question_id": "q_025",
+      "question": "In which year did Christopher Columbus first reach the Americas?",
+      "expected_answer": "1492",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_italy_wikipedia_chunk_0029",
+          "doc_id": "history_of_italy_wikipedia",
+          "source_file": "History of Italy - Wikipedia.txt",
+          "score": 0.032522,
+          "text": "northern Italy. Reasons for their early development include the relative military safety of Venetian lagoons, the high population density and the institutional structure which inspired entrepreneurs. Venice was the first real international financial center, which slowly emerged from the 9th century to its peak in the 14th century. Tradeable bonds were invented during this period. Italian [ a ] explorers and navigators from the dominant maritime republics, eager to find an alternative route to the Indies to bypass the Ottoman Empire, played a key role in the Age of Discovery and European colonization of the Americas. The most notable among them were Christopher Columbus, who is credited with discovering the New World; John Cabot, the first European to set foot in \"New Found Land\" and explore parts of the North American continent in 1497; Amerigo Vespucci, who first demonstrated in about 1501 that the New World was not Asia as initially conjectured but a different continent (America is named after him); and Giovanni da Verrazzano, the first European to explore the Atlantic coast of North America between Florida and New Brunswick in 1524. Marco da Nizza explored the region that later became Arizona and New Mexico in 1539. Henri de"
+        }
+      ]
+    },
+    {
+      "question_id": "q_026",
+      "question": "Which Spanish king ruled during the country's 'Golden Age' and was married to Mary Tudor?",
+      "expected_answer": "Philip II",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_spain_wikipedia_chunk_0035",
+          "doc_id": "history_of_spain_wikipedia",
+          "source_file": "History of Spain - Wikipedia.txt",
+          "score": 0.032266,
+          "text": "Habsburgs and the Holy Roman Empire, a powerful, far-reaching territory that assured Spain's future political security. Isabella's only son, Juan, married Margaret of Austria, further strengthening ties with the Habsburg dynasty. Isabella's fourth child, Maria, married Manuel I of Portugal, strengthening the link forged by her older sister's marriage. Her fifth child, Catherine, married King Henry VIII of England and was mother to Queen Mary I of England. Conclusion of the Reconquista and expulsions of Jews and Muslims Conquest of the Canary Islands, Columbian expeditions to the New World, and African expansion History of Spain - Wikipedia https://en.wikipedia.org/wiki/History_of_Spain Стр. 13 из 53 27.02.2026, 16:06 Landing of Columbus by John Vanderlyn, 1847. Christopher Columbus leads expedition to the New World, 1492, sponsored by Spanish crown Taking of Oran by Francisco Jiménez de Cisneros in 1509. The Castilian conquest of the Canary Islands, inhabited by Guanche people, took place between 1402 (with the conquest of Lanzarote) and 1496 (with the conquest of Tenerife). Two periods can be distinguished in this process: the noble conquest, carried out by the nobility in exchange for a pact of vassalage, and the royal conquest, carried out directly by the Crown, during the reign of the Catholic"
+        }
+      ]
+    },
+    {
+      "question_id": "q_027",
+      "question": "What were the military campaigns to reconquer the Iberian Peninsula from the Moors called?",
+      "expected_answer": "The Reconquista",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_europe_wikipedia_chunk_0024",
+          "doc_id": "history_of_europe_wikipedia",
+          "source_file": "History of Europe - Wikipedia.txt",
+          "score": 0.032522,
+          "text": "of Mediterranean North Africa and most of the Iberian Peninsula. Over the next centuries Muslim forces were able to take further European territory, including Cyprus, Malta, Crete, and Sicily and parts of southern Italy. The Muslim conquest of Hispania began when the Moors invaded the Christian Visigothic kingdom of Hispania in 711, under the Berber general Tariq ibn Ziyad. They landed at Gibraltar on 30 April and worked their way northward. Tariq's forces were joined the next year by those of his Arab superior, Musa ibn Nusair. During the eight-year campaign most of the Iberian Peninsula was brought under Muslim rule – save for small areas in the northwest (Asturias) and largely Basque regions in the Pyrenees. In 711, Visigothic Hispania was weakened because it was immersed in a serious internal crisis caused by a war of succession to the throne. The Early Middle Ages History of Europe - Wikipedia https://en.wikipedia.org/wiki/History_of_Europe Стр. 10 из 62 27.02.2026, 16:07 Europe in 1000, with most European states already formed Muslims took advantage of the crisis within the Hispano - Visigothic society to carry out their conquests. This territory, under the Arab name Al-Andalus, became part of the expanding Umayyad empire. The second siege"
+        }
+      ]
+    },
+    {
+      "question_id": "q_028",
+      "question": "Which French king is known as the 'Sun King'?",
+      "expected_answer": "Louis XIV",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "20_influential_leaders_in_european_history_chunk_0007",
+          "doc_id": "20_influential_leaders_in_european_history",
+          "source_file": "20 Influential Leaders in European History.txt",
+          "score": 0.032522,
+          "text": "as well as political and military pressure from France and Turks. Eventually, it became too much and he abdicated, retiring to a monastery. Elizabeth I of England 1533 - 1603 20 Inﬂuential Leaders in European History https://www.thoughtco.com/key-leaders-in-european-history-1221601 Стр. 11 из 24 01.03.2026, 13:51 George Gower / Getty Images The third child of Henry VIII to take to the throne, Elizabeth lasted the longest and oversaw a period that has been called a Golden Age for England, as the nation’s stature in culture and power grew. Elizabeth had to forge a new impression of the monarchy to counter fears that she was a woman; the control of her portrayal was so successful she established an image that, in many ways, lasts to this day. Louis XIV of France 1638 - 1715 DEA PICTURE LIBRARY / Getty Images Known as “The Sun King” or “the Great”, Louis is remembered as the apogee of the absolute monarch, a style of rule whereby the king (or queen) has total power invested in them. He led France through an age of great cultural achievement in which he was a key patron, as well as winning military victories, expanding the borders of France, 20 Inﬂuential Leaders"
+        }
+      ]
+    },
+    {
+      "question_id": "q_029",
+      "question": "In which year did the French Revolution begin?",
+      "expected_answer": "1789",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_europe_wikipedia_chunk_0109",
+          "doc_id": "history_of_europe_wikipedia",
+          "source_file": "History of Europe - Wikipedia.txt",
+          "score": 0.016393,
+          "text": "▪ 1100 BC: Minoan civilization falls. ▪ 1050 BC: Mycenaean civilization falls after a period of palace destruction, marking the beginning of Greek Dark Ages. ▪ 900 BC: Etruscan civilization begins. ▪ 800 BC: Greek Dark Ages end, marking the beginning of classical antiquity. ▪ 753 BC: Traditional year of founding of Rome. ▪ 700 BC: Homer composes The Iliad, an epic poem that represents the ﬁrst extended work of European literature. ▪ 509 BC: Roman Republic is created. ▪ 499 BC: Greco-Persian Wars begin. ▪ c. 480 BC: The Thracian Odrysian kingdom was founded as the most important Daco-Thracian state union. ▪ 449 BC: End of Greco-Persian Wars with Greeks defeating Achaemid Empire. ▪ 440 BC: Herodotus defends Athenian political freedom in the Histories. ▪ 404 BC: Sparta wins the Peloponnesian War. ▪ 323 BC: Alexander the Great dies and his Macedonian Empire (reaching far into Asia) fragments. ▪ 264 BC: Punic Wars begin. ▪ 146 BC: Punic Wars end with destruction of Carthage. ▪ 48 BC: Julius Caesar crosses the Rubicon river, marking the beginning of a civil war. ▪ 44 BC: Julius Caesar is murdered. The Roman Republic enters its terminal crisis. ▪ 27 BC: Establishment of"
+        }
+      ]
+    },
+    {
+      "question_id": "q_030",
+      "question": "Who was the famous French military leader and emperor who was finally defeated at Waterloo?",
+      "expected_answer": "Napoleon Bonaparte",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_france_wikipedia_chunk_0052",
+          "doc_id": "history_of_france_wikipedia",
+          "source_file": "History of France - Wikipedia.txt",
+          "score": 0.032258,
+          "text": "guerrillas seemed to be uncontrollable, the French troops eventually evacuated Spain. Since France had been defeated on these two fronts, states that had been conquered and controlled by Napoleon saw a good opportunity to strike back. The Sixth Coalition was formed under British leadership. The German states of the Confederation of the Rhine switched sides, finally opposing Napoleon. Napoleon was largely defeated in the Battle of the Nations outside Leipzig in October 1813, his forces heavily outnumbered by the Allied coalition armies and was overwhelmed by much larger armies during the Six Days Campaign (February 1814), although, the Six Days Campaign is often considered a tactical masterpiece because the allies suffered much higher casualties. Napoleon abdicated on 6 April 1814, and was exiled to Elba. The Congress of Vienna reversed the political changes that had occurred during the wars. Napoleon suddenly returned, seized control of France, raised an army, and marched on his enemies in the Hundred Days. It ended with his final defeat at the Battle of Waterloo in 1815, and his exile to St. Helena, a remote island in the South Atlantic Ocean. The monarchy was subsequently restored and Louis XVIII, younger brother of Louis XVI, became king,"
+        }
+      ]
+    },
+    {
+      "question_id": "q_031",
+      "question": "What is the name of the famous painting by Leonardo da Vinci, housed in the Louvre?",
+      "expected_answer": "The Mona Lisa (or La Gioconda)",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "art_of_europe_wikipedia_chunk_0000",
+          "doc_id": "art_of_europe_wikipedia",
+          "source_file": "Art of Europe - Wikipedia.txt",
+          "score": 0.032787,
+          "text": "Leonardo da Vinci 's Mona Lisa is an Italian art masterpiece famous worldwide. Considered an archetypal masterpiece of the Italian Renaissance, it has normally been on display at the Louvre in Paris since 1797. Art of Europe The art of Europe, also known as Western art, encompasses the history of visual art in Europe. European prehistoric art started as mobile Upper Paleolithic rock and cave painting and petroglyph art and was characteristic of the period between the Paleolithic and the Iron Age. Written histories of European art often begin with the Aegean civilizations, dating from the 3rd millennium BC. However a consistent pattern of artistic development within Europe becomes clear only with Ancient Greek art, which was adopted and transformed by Rome and, with the Roman Empire, was carried across much of Europe, North Africa and Western Asia. The influence of the art of the Classical period waxed and waned throughout the next two thousand years, seeming to slip into a distant memory in parts of the Medieval period, to re- emerge in the Renaissance, suffer a period of what some early art historians viewed as \"decay\" during the Baroque period, to reappear in a refined form in Neo-Classicism and"
+        }
+      ]
+    },
+    {
+      "question_id": "q_032",
+      "question": "What invention by Johannes Gutenberg revolutionized the spread of knowledge?",
+      "expected_answer": "The printing press",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "renaissance_wikipedia_chunk_0038",
+          "doc_id": "renaissance_wikipedia",
+          "source_file": "Renaissance - Wikipedia.txt",
+          "score": 0.032018,
+          "text": "the growing desire to study and imitate nature. In the 15th century, the Renaissance spread rapidly from its birthplace in Florence to the rest of Italy and soon to the rest of Europe. The invention of the printing press by German printer Johannes Gutenberg allowed the rapid transmission of these new ideas. As it spread, its ideas diversified and changed, being adapted to local culture. In the 20th century, scholars began to break the Renaissance into regional and national movements. Self-awareness Spread Renaissance - Wikipedia https://en.wikipedia.org/wiki/Renaissance Стр. 14 из 36 27.02.2026, 16:08 \"What a piece of work is a man, how noble in reason, how inﬁnite in faculties, in form and moving how express and admirable, in action how like an angel, in apprehension how like a god!\" – from William Shakespeare 's Hamlet The Elizabethan era in the second half of the 16th century is usually regarded as the height of the English Renaissance. Many scholars see its beginnings in the early 16th century during the reign of Henry VIII. The English Renaissance is different from the Italian Renaissance in several ways. The dominant art forms of the English Renaissance were literature and music, which had a rich flowering."
+        }
+      ]
+    },
+    {
+      "question_id": "q_033",
+      "question": "To which artistic era did Michelangelo belong?",
+      "expected_answer": "The Renaissance",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "art_of_europe_wikipedia_chunk_0028",
+          "doc_id": "art_of_europe_wikipedia",
+          "source_file": "Art of Europe - Wikipedia.txt",
+          "score": 0.031746,
+          "text": "artworks for instruction. These exemplary artistic creations further elevated the prestige of artists. Artists could claim divine inspiration, thereby raising visual art to a status formerly given only to poetry. Thus, painters, sculptors, and architects came into their own, successfully claiming for their work a high position among the fine arts. In a sense, 16th- century masters created a new profession with its own rights of expression and its own venerable character. High Renaissance Art of Europe - Wikipedia https://en.wikipedia.org/wiki/Art_of_Europe Стр. 17 из 33 27.02.2026, 16:09 The Last Supper (1494– 1499), Leonardo da Vinci, Church of Santa Maria delle Grazie, Milan The Tempietto (towards 1502–1510) in a narrow courtyard of the San Pietro in Montorio from Rome The Birth of Venus (1484– 1486), Sandro Botticelli, Ufﬁzi Gallery, Florence David; by Michelangelo; 1501–1504; marble; 517 cm × 199 cm; Galleria dell'Accademia (Florence) The School of Athens; by Raphael; 1509–1510; fresco; 5.8 x 8.2 m; Apostolic Palace (Vatican City) Early Netherlandish painting developed (but did not strictly invent) the technique of oil painting to allow greater control in painting minute detail with realism— Jan van Eyck (1366–1441) was a figure in the movement from illuminated manuscripts t o panel Northern art up"
+        }
+      ]
+    },
+    {
+      "question_id": "q_034",
+      "question": "Which artistic style, known for its drama and grandeur, followed the Renaissance?",
+      "expected_answer": "Baroque",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "art_of_europe_wikipedia_chunk_0033",
+          "doc_id": "art_of_europe_wikipedia",
+          "source_file": "Art of Europe - Wikipedia.txt",
+          "score": 0.031778,
+          "text": "lighter, often jocular themes; common characteristics included pale, creamy colours, ﬂorid decorations and a penchant for bucolic landscapes. Paintings were more ornate than their Baroque counterpart, and usually graceful, playful and light-hearted in nature. political themes were widely explored within the Baroque artistic context, and both paintings and sculptures were characterised by a strong element of drama, emotion and theatricality. Famous Baroque artists include Caravaggio o r Rubens. Artemisia Gentileschi wasanothernoteworthyartist, whowas inspired by Caravaggio's style. Baroque art was particularly ornate and elaborate in nature, often using rich, warm colours with dark undertones. Pomp and grandeur were important elements of the Baroque artistic movement in general, as can be seen when Louis XIV said, \"I am grandeur incarnate\"; many Baroque artists served kings who tried to realize this goal. Baroque art in many ways was similar to Renaissance art; as a matter of fact, the term was initially used in a derogative manner to describe post-Renaissance art and architecture which was over-elaborate. Baroque art can be seen as a more elaborate and dramatic re-adaptation of late Renaissance art. By the 18th century, however, Baroque art was falling out of fashion as many deemed it too melodramatic and also gloomy, and"
+        }
+      ]
+    },
+    {
+      "question_id": "q_035",
+      "question": "Who is the sculptor of the famous statue of 'David'?",
+      "expected_answer": "Michelangelo",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "art_of_europe_wikipedia_chunk_0025",
+          "doc_id": "art_of_europe_wikipedia",
+          "source_file": "Art of Europe - Wikipedia.txt",
+          "score": 0.031514,
+          "text": "in style. During the 13th century, Italian sculptors began to draw inspiration not only from medieval prototypes, but also from ancient works. In 1290, Giotto began painting in a manner that was less traditional and more based upon observation of nature. His famous cycle at the Scrovegni Chapel, Padua, is seen as the beginnings of a Renaissance style. Other painters of the 14th century were carried the Gothic style to great elaboration and detail. Notable among these painters are Simone Martini and Gentile da Fabriano. In the Netherlands, the technique of painting in oils rather than tempera, led itself to a form of elaboration that was not dependent upon the application of gold leaf and embossing, but upon the minute depiction of the natural world. The art of painting textures with great realism evolved at this time. Dutch painters such as Jan van Eyck and Hugo van der Goes were to have great influence on Late Gothic and Early Renaissance painting. The ideas of the Renaissance first emerged in the city-state of Florence, Italy. The sculptor Donatello returned to classical techniques such as contrapposto and classical subjects like the unsupported nude—his second sculpture of David was the first free-standing bronze"
+        }
+      ]
+    },
+    {
+      "question_id": "q_036",
+      "question": "What is the title of the famous 15th-century painting by Jan van Eyck depicting a couple?",
+      "expected_answer": "The Arnolfini Portrait",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "art_of_europe_wikipedia_chunk_0029",
+          "doc_id": "art_of_europe_wikipedia",
+          "source_file": "Art of Europe - Wikipedia.txt",
+          "score": 0.031778,
+          "text": "developed (but did not strictly invent) the technique of oil painting to allow greater control in painting minute detail with realism— Jan van Eyck (1366–1441) was a figure in the movement from illuminated manuscripts t o panel Northern art up to the Renaissance Art of Europe - Wikipedia https://en.wikipedia.org/wiki/Art_of_Europe Стр. 18 из 33 27.02.2026, 16:09 paintings. Hieronymus Bosch (1450?–1516), a Dutch painter, is another important figure in the Northern Renaissance. He used religious themes, but combined them with grotesque fantasies, colorful imagery, and peasant folk legends. His paintings often reflect the confusion and anguish associated with the end of the Middle Ages. Albrecht Dürer introduced Italian Renaissance style to Germany at the end of the 15th century, and dominated German Renaissance art. Time Period: ▪ Italian Renaissance: Late 14th century to Early 16th century ▪ Northern Renaissance: 16th century The Ghent Altarpiece; by Jan and Hubert van Eyck; 1432; oil on oak wood; 3.4 m × 4.6 m (opened like in this image); St Bavo's Cathedral (Ghent, Belgium) The Arnolﬁni Portrait; by Jan van Eyck; 1434; oil on panel; 82.2 x 60 cm; National Gallery (London) The Descent from the Cross; by Rogier van der Weyden; circa 1442; oil on"
+        }
+      ]
+    },
+    {
+      "question_id": "q_037",
+      "question": "Which non-Indo-European people inhabited north-western Italy before the rise of Rome?",
+      "expected_answer": "The Etruscans",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_italy_wikipedia_chunk_0010",
+          "doc_id": "history_of_italy_wikipedia",
+          "source_file": "History of Italy - Wikipedia.txt",
+          "score": 0.031498,
+          "text": "Italics in three major groups: the Elymians in the west, the Sicani in the centre, and the Sicels (source of the name Sicily) in the east. It is generally believed that around 2000 BC, the Ligures occupied a large area of the peninsula, including much of north-western Italy and all of northern Tuscany. Since many scholars consider the language of this ancient population to be Pre-Indo-European, they are often not classified as Italics. By the mid-first millennium BC, the Latins of Rome were growing in power and influence. After the Latins had liberated themselves from Etruscan rule they acquired a dominant position among the Italic tribes. Frequent conflict between various Italic tribes followed; the best documented are the Samnite Wars. The Latins eventually succeeded in unifying the Italic elements in the country. In the early first century BC, several Italic tribes, in particular the Marsi and the Samnites, rebelled against Roman rule (the Social War). After Roman victory was secured, all peoples in Italy, except for the Celts of the Po Valley, were granted Roman citizenship. In the subsequent centuries, Italic tribes adopted Latin language and culture in a process known as Romanization. In the eighth and seventh centuries BC,"
+        }
+      ]
+    },
+    {
+      "question_id": "q_038",
+      "question": "According to legend, in what year was Rome founded?",
+      "expected_answer": "753 BC",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_italy_wikipedia_chunk_0012",
+          "doc_id": "history_of_italy_wikipedia",
+          "source_file": "History of Italy - Wikipedia.txt",
+          "score": 0.032522,
+          "text": "and powerful, like Neapolis (Naples), Syracuse, Acragas, and Sybaris. Other cities in Magna Graecia included Tarentum, Epizephyrian Locri, Rhegium, Croton, Thurii, Elea, Nola, Ancona, Syessa, Bari, and others. After Pyrrhus of Epirus failed to stop the spread of Roman hegemony in 282 BC, the south fell under Roman domination. It was held by the Byzantine Empire after the fall of Rome in the West and even the Lombards failed to consolidate it, though the centre of the Magna Graecia History of Italy - Wikipedia https://en.wikipedia.org/wiki/History_of_Italy Стр. 5 из 53 27.02.2026, 16:06 Ancient Greek colonies and their dialect groupings in Magna Graecia NW Greek Achaean Doric Ionian The Capitoline Wolf sculpture in the Capitoline Museums. According to legend, Rome was founded in 753 BC by Romulus and Remus, who were raised by a she-wolf. south was theirs from Zotto 's conquest in the final quarter of the 6th century. Little is certain about the history of the Roman Kingdom, as nearly no written records from that time survive, and the histories written during the Republic and Empire are largely based on legends. According to the founding myth of Rome, the city was founded on 21 April 753 BC by twin brothers"
+        }
+      ]
+    },
+    {
+      "question_id": "q_039",
+      "question": "Which two powers fought in the Punic Wars?",
+      "expected_answer": "Rome and Carthage",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_spain_wikipedia_chunk_0008",
+          "doc_id": "history_of_spain_wikipedia",
+          "source_file": "History of Spain - Wikipedia.txt",
+          "score": 0.032522,
+          "text": "to the sphere of influence of Carthage. Until 219 BC, their presence in the peninsula was underpinned by their control of places such as Carthago Nova and Akra Leuké (both founded by Punics), as well as the network of old Phoenician settlements. The peninsula was a military theatre of the Second Punic War (218–201 BC) waged between Carthage and the Roman Republic, the two powers vying for supremacy in the western Mediterranean. Romans expelled Carthaginians from the peninsula in 206 BC. The peoples whom the Romans met at the time of their invasion were the Iberians, inhabiting an area stretching from the northeast Early history of the Iberian Peninsula History of Spain - Wikipedia https://en.wikipedia.org/wiki/History_of_Spain Стр. 3 из 53 27.02.2026, 16:06 The Iberian Peninsula in the 3rd century BC Roman Empire, 3rd century part of the Iberian Peninsula through the southeast. The Celts mostly inhabited the inner and north-west part of the peninsula. To the east of the Meseta Central, the Sistema Ibérico area was inhabited by the Celtiberians, reportedly rich in precious metals (obtained by Romans in the form of tributes). Celtiberians developed a refined technique of iron-forging, displayed in their quality weapons. The Celtiberian Wars were fought between"
+        }
+      ]
+    },
+    {
+      "question_id": "q_040",
+      "question": "Whose translation of the Bible was key to the development of the modern Standard German language?",
+      "expected_answer": "Martin Luther",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_german_wikipedia_chunk_0003",
+          "doc_id": "history_of_german_wikipedia",
+          "source_file": "History of German - Wikipedia.txt",
+          "score": 0.032787,
+          "text": "High German was also decisive for the German language and its evolution from Early New High German to Modern Standard German. The publication of Luther's Bible was a decisive moment in the spread of literacy in early modern Germany, and promoted the development of non-local forms of language and exposed all speakers to forms of German from outside their own area. In the beginning, copies of the Bible had a long list for each region, which translated words unknown in the region into the regional dialect. Roman Catholics rejected Luther's translation at first and tried to create their own Catholic standard (gemeines Deutsch)— which, however, differed from \"Protestant German\" only in some minor details. It took until the middle of the 18th century to create a standard that was widely accepted, thus ending the period of Early New High German. Low German, being at the crossroads between High German, Anglo-Frisian, Low Franconian and the South Jutlandic dialect of Low German History of German - Wikipedia https://en.wikipedia.org/wiki/History_of_German Стр. 2 из 6 27.02.2026, 16:05 Modern High German translation of the Christian Bible by the Protestant reformer Martin Luther (1534). The widespread popularity of the Bible translated into High German by Luther helped"
+        }
+      ]
+    },
+    {
+      "question_id": "q_041",
+      "question": "The kingdom of which Germanic tribe formed the basis for the state in modern-day France?",
+      "expected_answer": "The Franks",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "french_art_wikipedia_chunk_0007",
+          "doc_id": "french_art_wikipedia",
+          "source_file": "French art - Wikipedia.txt",
+          "score": 0.03101,
+          "text": "Aachen Gospels, c. 820, an example of Carolingian illumination Merovingian art is the art and architecture of the Merovingian dynasty of the Franks, which lasted from the fifth century to the eighth century in present-day France and Germany. The advent of the Merovingian dynasty in Gaul during the fifth century led to important changes in the arts. In architecture, there was no longer the desire to build robust and harmonious buildings. Sculpture regressed to being little more than a simple technique for the ornamentation of sarcophagi, altars, and ecclesiastical furniture. On the other hand, the rise of gold work and manuscript illumination brought about a resurgence of Celtic decoration, which, with Christian and other contributions, constitutes the basis of Merovingian art. The unification of the Frankish kingdom under Clovis I (465–511) and his successors, corresponded with the need to build churches. The plans for them probably were copied from Roman basilicas. Unfortunately, these timber structures have not survived because of destruction by fire, whether accidental or caused by the Normans at the time of their incursions. Carolingian art is the approximate 120-year period from 750 to 900—during the reign of Charles Martel, Pippin the Younger, Charlemagne, and his immediate heirs—popularly"
+        }
+      ]
+    },
+    {
+      "question_id": "q_042",
+      "question": "What were the major military expeditions by European Christians to the Holy Land called?",
+      "expected_answer": "The Crusades",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_europe_wikipedia_chunk_0031",
+          "doc_id": "history_of_europe_wikipedia",
+          "source_file": "History of Europe - Wikipedia.txt",
+          "score": 0.031514,
+          "text": "forms of intellectual, spiritual and artistic works. The most famous are the great cathedrals as expressions of Gothic architecture, which evolved from Romanesque architecture. This age saw the rise of modern nation-states in Western Europe and the ascent of the famous Italian city-states, such as Florence and Venice. The influential popes of the Catholic Church called volunteer armies from across Europe to a series of Crusades against the Seljuq Turks, who occupied the Holy Land. The rediscovery of the works of Aristotle led Thomas Aquinas and other thinkers to develop the philosophy of Scholasticism. After the East–West Schism, Western Christianity was adopted by the newly created kingdoms of Central Europe: Poland, Hungary and Bohemia. The Roman Catholic Church developed as a major power, leading to conflicts between the Pope and emperor. The geographic reach of the Roman Catholic Church expanded enormously due to the conversions of pagan kings (Scandinavia, Lithuania, Poland, Hungary), the Christian Reconquista of Al-Andalus, and the Crusades. Most of Europe was Roman Catholic in the 15th century. Early signs of the rebirth of civilization in western Europe began to appear in the 11th century as trade started again in Italy, leading to the economic and cultural growth"
+        }
+      ]
+    },
+    {
+      "question_id": "q_043",
+      "question": "Which famous painting by Pablo Picasso depicts the horrors of the bombing of a town during the Spanish Civil War?",
+      "expected_answer": "Guernica",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "20th_century_western_painting_wikipedia_chunk_0023",
+          "doc_id": "20th_century_western_painting_wikipedia",
+          "source_file": "20th-century Western painting - Wikipedia.txt",
+          "score": 0.032787,
+          "text": "While her paintings are not overtly Christian—she was an avowed communist—they certainly contain elements of the macabre Mexican Christian style of religious paintings. During the 1930s radical leftist politics characterized many of the artists connected to Surrealism, including Pablo Picasso. On 26 April 1937, during the Spanish Civil War, the Basque town of Gernika was the scene of the \" Bombing of Gernika \" by the Condor Legion of Nazi Germany's Luftwaffe. The Germans were attacking to support the efforts of Francisco Franco to overthrow the Basque Government and the Spanish Republican government. The town was devastated, though the Biscayan assembly and the Oak of Gernika survived. Picasso painted his mural sized Guernica to commemorate the horrors of the bombing. In its final form, Guernica is an immense black and white, 3.5 metre (11 ft) tall and 7.8 metre (23 ft) wide mural painted in oil. The mural presents a scene of death, violence, brutality, suffering, and helplessness without portraying their immediate causes. The choice to paint in black and white contrasts with the intensity of the scene depicted and invokes the immediacy of a newspaper photograph. Picasso painted the mural sized painting called Guernica in protest of the bombing."
+        }
+      ]
+    },
+    {
+      "question_id": "q_044",
+      "question": "What was the name of the political regime led by Benito Mussolini in Italy?",
+      "expected_answer": "Fascism",
+      "top_k": 1,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "history_of_italy_wikipedia_chunk_0071",
+          "doc_id": "history_of_italy_wikipedia",
+          "source_file": "History of Italy - Wikipedia.txt",
+          "score": 0.032018,
+          "text": "Socialist Party. This early Fascist movement had a platform more inclined to the left, promising social revolution, proportional representation in elections, women's suffrage (partly realized in 1925) and dividing rural private property held by estates. They also differed from later Fascism by opposing censorship, militarism and dictatorship. At the same time, the so-called Biennio Rosso (red biennium) took place in the two years following the war in a context of economic crisis, high unemployment and political instability. The 1919–20 period was characterized by mass strikes, worker manifestations as well as self-management experiments through land and factory occupations. In Turin and Milan, workers councils were formed and Fascist regime and World War II (1922–1945) Rise of Fascism into power History of Italy - Wikipedia https://en.wikipedia.org/wiki/History_of_Italy Стр. 26 из 53 27.02.2026, 16:06 The celebration of the birthday of the Italian King Victor Emmanuel III on 11 November 1918, in Rijeka Benito Mussolini, who titled himself Duce and ruled the country from 1922 to 1943 many factory occupations took place under the leadership of anarcho-syndicalists. The agitations also extended to the agricultural areas of the Padan plain and were accompanied by peasant strikes, rural unrests and guerilla conflicts between left-wing and right-wing militias."
+        }
+      ]
+    }
+  ]
+}

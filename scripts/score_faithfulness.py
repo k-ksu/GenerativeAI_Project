@@ -7,17 +7,66 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from config import RAG_RESULTS_DIR, REPORTS_DIR, RETRIEVAL_RESULTS_DIR
 
-
 PAREN_PATTERN = re.compile(r"\([^)]*\)")
 NON_ALNUM_PATTERN = re.compile(r"[^a-z0-9\s]")
 WHITESPACE_PATTERN = re.compile(r"\s+")
 STOPWORDS = {
-    "a", "an", "the", "and", "or", "of", "to", "in", "on", "for", "by", "with",
-    "was", "were", "is", "are", "be", "as", "at", "from", "that", "this", "it",
-    "its", "their", "his", "her", "he", "she", "they", "them", "which", "who",
-    "what", "when", "where", "why", "how", "into", "during", "after", "before",
-    "under", "over", "than", "then", "also", "called", "known", "name", "title",
-    "question", "answer", "context", "provided", "passage"
+    "a",
+    "an",
+    "the",
+    "and",
+    "or",
+    "of",
+    "to",
+    "in",
+    "on",
+    "for",
+    "by",
+    "with",
+    "was",
+    "were",
+    "is",
+    "are",
+    "be",
+    "as",
+    "at",
+    "from",
+    "that",
+    "this",
+    "it",
+    "its",
+    "their",
+    "his",
+    "her",
+    "he",
+    "she",
+    "they",
+    "them",
+    "which",
+    "who",
+    "what",
+    "when",
+    "where",
+    "why",
+    "how",
+    "into",
+    "during",
+    "after",
+    "before",
+    "under",
+    "over",
+    "than",
+    "then",
+    "also",
+    "called",
+    "known",
+    "name",
+    "title",
+    "question",
+    "answer",
+    "context",
+    "provided",
+    "passage",
 }
 REFUSAL_PATTERNS = [
     "not found",
@@ -79,7 +128,9 @@ def classify_faithfulness(model_answer: str, expected_answer: str, context_text:
 
     answer_tokens = informative_tokens(model_answer)
     if answer_tokens:
-        overlap_count = sum(1 for token in answer_tokens if token in context_norm.split())
+        overlap_count = sum(
+            1 for token in answer_tokens if token in context_norm.split()
+        )
         overlap_ratio = overlap_count / len(answer_tokens)
     else:
         overlap_ratio = 0.0
@@ -97,9 +148,11 @@ def classify_faithfulness(model_answer: str, expected_answer: str, context_text:
 
 
 def matching_retrieval_filename(rag_filename: str) -> str:
-    if not rag_filename.startswith("rag_"):
-        raise ValueError(f"Unexpected RAG filename: {rag_filename}")
-    return rag_filename[len("rag_"):]
+    if rag_filename.startswith("extraction_rag_"):
+        return rag_filename[len("extraction_rag_") :]
+    if rag_filename.startswith("rag_"):
+        return rag_filename[len("rag_") :]
+    raise ValueError(f"Unexpected RAG filename: {rag_filename}")
 
 
 def score_file(rag_path: str, retrieval_path: str):
@@ -114,7 +167,9 @@ def score_file(rag_path: str, retrieval_path: str):
     per_question = []
 
     for rag_item, retrieval_item in zip(rag_data, retrieval_data["results"]):
-        context_text = "\n\n".join(chunk["text"] for chunk in retrieval_item["retrieved_chunks"])
+        context_text = "\n\n".join(
+            chunk["text"] for chunk in retrieval_item["retrieved_chunks"]
+        )
         label, overlap_ratio = classify_faithfulness(
             rag_item["model_answer"],
             rag_item["expected_answer"],
@@ -155,7 +210,9 @@ def score_file(rag_path: str, retrieval_path: str):
 def main():
     os.makedirs(REPORTS_DIR, exist_ok=True)
 
-    rag_files = sorted(name for name in os.listdir(RAG_RESULTS_DIR) if name.endswith(".json"))
+    rag_files = sorted(
+        name for name in os.listdir(RAG_RESULTS_DIR) if name.endswith(".json")
+    )
     if not rag_files:
         raise ValueError(f"No RAG files found in {RAG_RESULTS_DIR}")
 
